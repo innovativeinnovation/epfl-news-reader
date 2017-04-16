@@ -22,6 +22,14 @@ module.exports = {
       ],
       dest: 'www/',
       nonull: true,
+    },{
+      expand: true,
+      cwd: 'bower_components/handlebars/',
+      src: [
+        'handlebars.runtime.min.js',
+      ],
+      dest: 'www/js/',
+      nonull: true,
     },],
   },
 };

@@ -1,5 +1,6 @@
 {
   "preset": "node-style-guide",
+  "requireCamelCaseOrUpperCaseIdentifiers": null,
   "excludeFiles": [
     "node_modules/**",
     "bower_components/**",

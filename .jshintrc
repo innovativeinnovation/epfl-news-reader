@@ -11,5 +11,8 @@
   "unused": false,
   "strict": true,
   "globals": {
+    "Dom7": true,
+    "EPFLNews": true,
+    "Framework7": true
   }
 }

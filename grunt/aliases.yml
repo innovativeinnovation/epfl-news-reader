@@ -9,6 +9,7 @@ test:
 build:
   - 'test'
   - 'copy:build'
+  - 'handlebars:build'
 
 serve:
   - 'build'
