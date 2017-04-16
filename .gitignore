@@ -48,3 +48,6 @@ bower_components
 
 # dist folder
 www
+
+# Sass cache
+.sass-cache
