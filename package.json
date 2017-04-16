@@ -1,0 +1,17 @@
+{
+  "name": "epfl-news-reader",
+  "private": true,
+  "version": "0.0.1",
+  "description": "EPFL News Reader",
+  "keywords": [
+    "EPFL",
+    "News",
+    "Reader"
+  ],
+  "author": "William Belle <william.belle@gmail.com>",
+  "license": "Apache-2.0",
+  "repository": "https://github.com/epfl-devrun/epfl-news-reader.git",
+  "scripts": {},
+  "devDependencies": {},
+  "dependencies": {}
+}
