@@ -5,3 +5,15 @@
 test:
   - 'jshint'
   - 'jscs'
+
+build:
+  - 'test'
+  - 'copy:build'
+
+serve:
+  - 'build'
+  - 'connect:build'
+  - 'watch'
+
+default:
+  - 'serve'
