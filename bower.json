@@ -11,5 +11,8 @@
   "author": "William Belle <william.belle@gmail.com>",
   "license": "Apache-2.0",
   "repository": "https://github.com/epfl-devrun/epfl-news-reader.git",
-  "dependencies": {}
+  "dependencies": {
+    "framework7": "1.6.0",
+    "handlebars": "4.0.5"
+  }
 }
