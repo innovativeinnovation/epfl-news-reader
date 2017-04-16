@@ -10,6 +10,7 @@ build:
   - 'test'
   - 'copy:build'
   - 'handlebars:build'
+  - 'sass:build'
 
 serve:
   - 'build'
