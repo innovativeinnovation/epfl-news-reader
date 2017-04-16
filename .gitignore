@@ -1,3 +1,7 @@
+# (c) All rights reserved. ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE,
+# Switzerland, VPSI, 2017.
+# See the LICENSE file for more details.
+
 # Logs
 logs
 *.log
@@ -35,3 +39,12 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
+
+# bower components
+bower_components
+
+# OSX
+.DS_Store
+
+# dist folder
+www
