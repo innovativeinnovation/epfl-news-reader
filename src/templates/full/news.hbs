@@ -2,10 +2,24 @@
   {{> navbar }}
   <div class="page-content news-content">
     <img src="{{ NEWS_IMAGE }}" />
-    <span>{{ NEWS_DATE }}</span>
+    <span class="news-date">{{ NEWS_DATE }}</span>
+    <a href="#">
+      <i class="fa fa-share-alt news-share" aria-hidden="true"></i>
+    </a>
     <div class="content-block news-text">
       <h2>{{ NEWS_TITLE }}</h2>
       {{{ NEWS_DESC }}}
+      <br />
+      <div class="news-authors">
+        <p><strong>Author(s)</strong></p>
+        {{#each this}}
+          {{#authors}}
+          <i class="fa fa-user" aria-hidden="true"></i>
+          <span>{{first_name}} {{last_name}}</span>
+          <br />
+          {{/authors}}
+        {{/each}}
+      </center>
     </div>
   </div>
 </div>

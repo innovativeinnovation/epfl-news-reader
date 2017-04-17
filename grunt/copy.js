@@ -30,6 +30,15 @@ module.exports = {
       ],
       dest: 'www/js/',
       nonull: true,
+    },{
+      expand: true,
+      cwd: 'bower_components/font-awesome/',
+      src: [
+        'fonts/**',
+        'css/font-awesome.min.css',
+      ],
+      dest: 'www/',
+      nonull: true,
     },],
   },
 };

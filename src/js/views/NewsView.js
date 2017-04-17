@@ -15,6 +15,7 @@
       NEWS_TITLE: EPFLNews.data[id].title,
       NEWS_DESC: EPFLNews.data[id].text,
       NEWS_DATE: EPFLNews.data[id].publish_date,
+      NEWS_AUTHORS: EPFLNews.data[id],
       left: true,
     });
   };
