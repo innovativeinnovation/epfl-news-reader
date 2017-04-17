@@ -18,7 +18,7 @@
     var url = 'https://actu.epfl.ch/feeds/json/';
     var params = {
       channel: 'mediacom',
-      len: 10,
+      len: 50,
       lang: 'en',
     };
 

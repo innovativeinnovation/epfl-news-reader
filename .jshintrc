@@ -12,6 +12,7 @@
   "strict": true,
   "globals": {
     "caches": true,
+    "document": true,
     "Dom7": true,
     "EPFLNews": true,
     "fetch": true,

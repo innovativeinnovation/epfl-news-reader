@@ -22,3 +22,40 @@
     font-size: 1.1em
     margin: 5px 0 5px 0
     color: #111
+
+.news-content
+  .news-text
+    text-align: justify
+    color: #888
+
+    h2
+      text-align: left
+      color: #111
+
+  @media screen and (max-width: 425px) and (orientation: portrait)
+    img
+      width: 100%
+
+    span
+      background-color: #009688
+      color: white
+      padding: 5px 10px
+      border-radius: 10px
+      position: absolute
+      margin-left: 15px
+      margin-top: -20px
+
+  @media screen and (min-width: 426px)
+    img
+      float: right
+      margin: 20px 16px
+
+    span
+      margin-left: 16px
+      margin-top: 20px
+      margin-bottom: 20px
+      float: left
+      color: #009688
+
+    h2
+      clear: left

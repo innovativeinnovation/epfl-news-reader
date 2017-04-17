@@ -14,6 +14,7 @@
   };
 
   EPFLNews.MainView.prototype.updateListNews = function(data) {
+    EPFLNews.data = data;
     var newsBlock = this.buildListNews(data);
     $$('#news-block-container').html(newsBlock);
   };
@@ -24,6 +25,7 @@
       newsBlocks += EPFLNews.Templates[
         EPFLNews.Constants.HANDLEBARS.NEWS_BLOCK
       ]({
+        NEWS_INDEX: i,
         NEWS_TITLE: newsList[i].title,
         NEWS_SUBTITLE: newsList[i].subtitle,
         NEWS_IMAGE: newsList[i].visual,

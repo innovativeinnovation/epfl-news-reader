@@ -11,6 +11,7 @@
 
     HANDLEBARS: {
       MAIN: 'src/templates/full/main.hbs',
+      NEWS: 'src/templates/full/news.hbs',
       NEWS_BLOCK: 'src/templates/full/news-block.hbs',
     },
 

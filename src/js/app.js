@@ -24,14 +24,19 @@
         dynamicNavbar: true,
       });
 
-      if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('./service-worker.js')
-          .then(function() {
-            console.log('INFO: ServiceWorker registered');
-          });
-      }
+      // If ('serviceWorker' in navigator) {
+      //   navigator.serviceWorker.register('./service-worker.js')
+      //     .then(function() {
+      //       console.log('INFO: ServiceWorker registered');
+      //     });
+      // }
 
+      this.bindEvents();
       this.render();
+    },
+
+    bindEvents: function() {
+      EPFLNews.Events.onClickNews();
     },
 
     render: function() {
