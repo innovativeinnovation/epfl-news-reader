@@ -4,6 +4,13 @@ EPFL News Reader
 
 Work In Progress
 
+Screenshots
+-----------
+
+News List                           |  News
+:----------------------------------:|:--------------------------------------:
+![News List](doc/screenshot-1.png)  |  ![News](doc/screenshot-2.png)
+
 
 License
 -------
