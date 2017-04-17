@@ -11,6 +11,10 @@
 
   EPFLNews.MainController.prototype.init = function() {
 
+    // Render Main View
+    var mainView = new EPFLNews.MainView();
+    mainView.render();
+
     var url = 'https://actu.epfl.ch/feeds/json/';
     var params = {
       channel: 'mediacom',
@@ -18,11 +22,18 @@
       lang: 'en',
     };
 
-    $$.get(url, params, function(data) {
+    if ('caches' in window) {
+      caches.match(url + '?' + $$.param(params)).then(function(response) {
+        if (response) {
+          response.json().then(function updateFromCache(json) {
+            mainView.updateListNews(json);
+          });
+        }
+      });
+    }
 
-      // Render Main View
-      var mainView = new EPFLNews.MainView(data);
-      mainView.render();
+    $$.get(url, params, function(data) {
+      mainView.updateListNews(JSON.parse(data));
     });
 
   };

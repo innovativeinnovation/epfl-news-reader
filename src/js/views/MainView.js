@@ -7,27 +7,27 @@
 (function($$) {
   'use strict';
 
-  EPFLNews.MainView = function(data) {
-    this.data = JSON.parse(data);
-    var newsBlock = this.buildListNews();
-    var params = {
-      NEWS_BLOCK: newsBlock,
-    };
+  EPFLNews.MainView = function() {
     this.html = EPFLNews.Templates[
       EPFLNews.Constants.HANDLEBARS.MAIN
-    ](params);
+    ]();
   };
 
-  EPFLNews.MainView.prototype.buildListNews = function() {
+  EPFLNews.MainView.prototype.updateListNews = function(data) {
+    var newsBlock = this.buildListNews(data);
+    $$('#news-block-container').html(newsBlock);
+  };
+
+  EPFLNews.MainView.prototype.buildListNews = function(newsList) {
     var newsBlocks = '';
-    for (var i = 0; i < this.data.length; i++) {
+    for (var i = 0; i < newsList.length; i++) {
       newsBlocks += EPFLNews.Templates[
         EPFLNews.Constants.HANDLEBARS.NEWS_BLOCK
       ]({
-        NEWS_TITLE: this.data[i].title,
-        NEWS_SUBTITLE: this.data[i].subtitle,
-        NEWS_IMAGE: this.data[i].visual,
-        NEWS_DATE: this.data[i].publish_date,
+        NEWS_TITLE: newsList[i].title,
+        NEWS_SUBTITLE: newsList[i].subtitle,
+        NEWS_IMAGE: newsList[i].visual,
+        NEWS_DATE: newsList[i].publish_date,
         BLOCK_BACK: i % 2 === 0 ? '' : 'gray-background',
       });
     }

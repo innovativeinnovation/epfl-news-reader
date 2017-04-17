@@ -11,8 +11,14 @@
   "unused": false,
   "strict": true,
   "globals": {
+    "caches": true,
     "Dom7": true,
     "EPFLNews": true,
-    "Framework7": true
+    "fetch": true,
+    "Framework7": true,
+    "navigator": true,
+    "Promise": true,
+    "self": true,
+    "window": true
   }
 }

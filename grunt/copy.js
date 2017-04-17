@@ -9,7 +9,7 @@ module.exports = {
     files: [{
       expand: true,
       cwd: 'src/',
-      src: ['js/**', 'img/**', 'index.html'],
+      src: ['js/**', 'img/**', 'index.html', 'service-worker.js'],
       dest: 'www/',
       nonull: true,
     },{
