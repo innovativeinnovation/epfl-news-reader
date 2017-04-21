@@ -11,6 +11,11 @@ build:
   - 'copy:build'
   - 'handlebars:build'
   - 'sass:build'
+  - 'replace:build'
+
+release:
+  - 'build'
+  - 'replace:release'
 
 serve:
   - 'build'
