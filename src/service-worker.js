@@ -5,15 +5,19 @@ var cacheName     = 'epfl-news-reader';
 var filesToCache = [
   '/',
   '/index.html',
+  '/css/font-awesome.min.css',
   '/css/framework7.material.min.css',
   '/css/framework7.material.colors.min.css',
   '/css/app.css',
+  '/fonts/fontawesome-webfont.woff2?v=4.7.0',
   '/js/framework7.min.js',
   '/js/handlebars.runtime.min.js',
   '/js/templates/all.js',
   '/js/utils/Constants.js',
+  '/js/utils/Events.js',
   '/js/controllers/MainController.js',
   '/js/views/MainView.js',
+  '/js/views/NewsView.js',
   '/js/app.js',
 ];
 

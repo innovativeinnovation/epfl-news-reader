@@ -24,12 +24,12 @@
         dynamicNavbar: true,
       });
 
-      // If ('serviceWorker' in navigator) {
-      //   navigator.serviceWorker.register('./service-worker.js')
-      //     .then(function() {
-      //       console.log('INFO: ServiceWorker registered');
-      //     });
-      // }
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('./service-worker.js')
+          .then(function() {
+            console.log('INFO: ServiceWorker registered');
+          });
+      }
 
       this.bindEvents();
       this.render();
