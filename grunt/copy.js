@@ -1,6 +1,5 @@
 /*
- * (c) All rights reserved. ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE,
- * Switzerland, VPSI, 2017.
+ * (c) ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, VPSI, 2017.
  * See the LICENSE file for more details.
  */
 
@@ -9,7 +8,13 @@ module.exports = {
     files: [{
       expand: true,
       cwd: 'src/',
-      src: ['js/**', 'img/**', 'index.html', 'service-worker.js'],
+      src: [
+        'js/**',
+        'img/**',
+        'index.html',
+        'manifest.json',
+        'service-worker.js',
+      ],
       dest: 'www/',
       nonull: true,
     },{
