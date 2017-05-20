@@ -22,7 +22,6 @@ module.exports = {
       cwd: 'bower_components/framework7/dist/',
       src: [
         'css/framework7.material.min.css',
-        'css/framework7.material.colors.min.css',
         'js/framework7.min.js',
       ],
       dest: 'www/',
