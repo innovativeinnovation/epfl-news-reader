@@ -5,6 +5,6 @@
 
 module.exports = {
   build: {
-    src: ['www'],
+    src: ['www', 'build'],
   },
 };
