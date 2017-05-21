@@ -26,6 +26,7 @@
     "grunt-contrib-uglify": "^3.0.1",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-jscs": "^3.0.1",
+    "grunt-processhtml": "^0.4.1",
     "grunt-replace": "^1.0.1",
     "load-grunt-config": "^0.19.2"
   },
