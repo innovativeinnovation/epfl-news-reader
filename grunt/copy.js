@@ -11,18 +11,10 @@ module.exports = {
       src: [
         'js/**',
         'img/**',
+        'css/**',
         'index.html',
         'manifest.json',
         'service-worker.js',
-      ],
-      dest: 'www/',
-      nonull: true,
-    },{
-      expand: true,
-      cwd: 'bower_components/framework7/dist/',
-      src: [
-        'css/framework7.material.min.css',
-        'js/framework7.min.js',
       ],
       dest: 'www/',
       nonull: true,
