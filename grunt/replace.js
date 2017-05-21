@@ -4,7 +4,7 @@
  */
 
 module.exports = {
-  build: {
+  fileToCacheDev: {
     options: {
       patterns: [{
         match: /'<FILES_TO_CACHE>'/g,
@@ -32,24 +32,15 @@ module.exports = {
       dest: 'www/',
     },],
   },
-  release: {
+  fileToCacheProd: {
     options: {
       patterns: [{
         match: /'<FILES_TO_CACHE>'/g,
         replacement:  [
           '/epfl-news-reader/',
           '/epfl-news-reader/index.html',
-          '/epfl-news-reader/css/framework7.material.min.css',
-          '/epfl-news-reader/css/app.css',
-          '/epfl-news-reader/js/framework7.min.js',
-          '/epfl-news-reader/js/handlebars.runtime.min.js',
-          '/epfl-news-reader/js/templates/all.js',
-          '/epfl-news-reader/js/utils/Constants.js',
-          '/epfl-news-reader/js/utils/Events.js',
-          '/epfl-news-reader/js/controllers/MainController.js',
-          '/epfl-news-reader/js/views/MainView.js',
-          '/epfl-news-reader/js/views/NewsView.js',
-          '/epfl-news-reader/js/app.js',
+          '/epfl-news-reader/css/epfl-news-<%= pkg.version %>.min.css',
+          '/epfl-news-reader/js/epfl-news-<%= pkg.version %>.min.js',
         ],
       },],
     },
@@ -57,6 +48,20 @@ module.exports = {
       expand: true,
       flatten: true,
       src: ['src/service-worker.js'],
+      dest: 'build/',
+    },],
+  },
+  indexCssJs: {
+    options: {
+      patterns: [{
+        match: /epfl-news.min/g,
+        replacement: 'epfl-news-<%= pkg.version %>.min',
+      },],
+    },
+    files: [{
+      expand: true,
+      flatten: true,
+      src: ['www/index.html'],
       dest: 'www/',
     },],
   },
