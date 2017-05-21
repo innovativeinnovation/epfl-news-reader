@@ -14,4 +14,10 @@ module.exports = {
       'www/js/templates/all.js': ['src/templates/**/*.hbs'],
     },
   },
+
+  release: {
+    files: {
+      'build/js/templates/all.js': ['src/templates/**/*.hbs'],
+    },
+  },
 };
