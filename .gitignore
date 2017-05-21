@@ -51,3 +51,6 @@ www
 
 # Sass cache
 .sass-cache
+
+# build folder
+build
