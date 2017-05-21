@@ -28,4 +28,17 @@ module.exports = {
       nonull: true,
     },],
   },
+
+  release: {
+    files: [{
+      expand: true,
+      cwd: 'src/',
+      src: [
+        'img/**',
+        'manifest.json',
+      ],
+      dest: 'www/',
+      nonull: true,
+    },],
+  },
 };
