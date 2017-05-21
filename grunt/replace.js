@@ -11,9 +11,9 @@ module.exports = {
         replacement:  [
           '/',
           '/index.html',
-          '/css/framework7.material.min.css',
+          '/css/framework7.material.custom.min.css',
           '/css/app.css',
-          '/js/framework7.min.js',
+          '/js/vendors/framework7.custom.min.js',
           '/js/handlebars.runtime.min.js',
           '/js/templates/all.js',
           '/js/utils/Constants.js',

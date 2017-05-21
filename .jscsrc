@@ -4,6 +4,7 @@
   "excludeFiles": [
     "node_modules/**",
     "bower_components/**",
-    "www/**"
+    "www/**",
+    "src/js/vendors/**"
   ],
 }
