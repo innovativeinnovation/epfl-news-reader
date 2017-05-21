@@ -14,4 +14,16 @@ module.exports = {
       ext: '.css',
     },],
   },
+  release: {
+    options: {
+      sourcemap: 'none',
+    },
+    files: [{
+      expand: true,
+      cwd: 'src/sass',
+      src: ['**/*.sass'],
+      dest: 'build/css/',
+      ext: '.css',
+    },],
+  },
 };
