@@ -40,6 +40,7 @@
     },
 
     render: function() {
+      $$('#static-start-content').remove();
       var mainController = new EPFLNews.MainController();
       mainController.init();
     },
