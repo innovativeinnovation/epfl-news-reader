@@ -1,22 +1,31 @@
-# (c) All rights reserved. ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE,
-# Switzerland, VPSI, 2017.
+# (c) ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, VPSI, 2017.
 # See the LICENSE file for more details.
 
 test:
   - 'jshint'
   - 'jscs'
 
-build:
+prepare:
   - 'clean'
   - 'test'
+
+build:
+  - 'prepare'
   - 'copy:build'
   - 'handlebars:build'
   - 'sass:build'
-  - 'replace:build'
+  - 'replace:fileToCacheDev'
 
 release:
-  - 'build'
-  - 'replace:release'
+  - 'prepare'
+  - 'replace:fileToCacheProd'
+  - 'handlebars:release'
+  - 'sass:release'
+  - 'cssmin:release'
+  - 'uglify:release'
+  - 'processhtml:release'
+  - 'replace:indexCssJs'
+  - 'copy:release'
 
 serve:
   - 'build'
