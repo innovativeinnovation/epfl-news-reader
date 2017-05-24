@@ -13,11 +13,24 @@
     ]({
       NEWS_IMAGE: EPFLNews.data[id].visual,
       NEWS_TITLE: EPFLNews.data[id].title,
-      NEWS_DESC: EPFLNews.data[id].text,
+      NEWS_DESC: this.cleanStyle(EPFLNews.data[id].text),
       NEWS_DATE: EPFLNews.data[id].publish_date,
       NEWS_AUTHORS: EPFLNews.data[id],
       left: true,
     });
+  };
+
+  EPFLNews.NewsView.prototype.addExternalLinkClass = function() {
+    var $$links = $$('.news-text').find('a');
+    for (var i = 0; i < $$links.length; i++) {
+      var $$l = $$($$links[i]);
+      $$l.attr('class', 'external');
+      $$l.attr('target', '_blank');
+    }
+  };
+
+  EPFLNews.NewsView.prototype.cleanStyle = function(text) {
+    return text.replace(/style="[a-zA-Z0-9:;\.\s\(\)\-\,]*"/gi);
   };
 
   EPFLNews.NewsView.prototype.buildNews = function() {

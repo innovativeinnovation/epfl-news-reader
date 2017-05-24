@@ -11,9 +11,9 @@
 
     onClickNews: function() {
       $$(document).on('click', '.newsLink', function() {
-        console.log('click');
         var view = new EPFLNews.NewsView($$(this).attr('news-index'));
         view.render();
+        view.addExternalLinkClass();
       });
     },
   };
