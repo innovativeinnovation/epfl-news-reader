@@ -32,9 +32,17 @@ $epfl-color: #ed1c24
     color: #000
 
 .news-content
+  a
+    text-decoration: underline
+    color: $epfl-color
+
+  a:hover
+    text-decoration: none
+
   .news-text
+    margin: 0
     text-align: justify
-    color: #888
+    color: #666
 
     h2
       text-align: left
@@ -46,7 +54,7 @@ $epfl-color: #ed1c24
       vertical-align: middle
 
   @media screen and (max-width: 425px) and (orientation: portrait)
-    img
+    .main-image
       width: 100%
 
     .news-text
@@ -79,7 +87,7 @@ $epfl-color: #ed1c24
         vertical-align: middle
 
   @media screen and (min-width: 426px)
-    img
+    .main-image
       float: right
       margin: 20px 16px
 
@@ -95,3 +103,11 @@ $epfl-color: #ed1c24
 
     h2
       clear: left
+
+@media screen and (min-width: 800px)
+  .news-block, .news-content
+    max-width: 800px
+    margin: 0 auto
+
+  .news-block
+    border: 1px solid #f2f2f2

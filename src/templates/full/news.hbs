@@ -1,27 +1,29 @@
 <div data-page="news" class="page navbar-fixed">
   {{> navbar }}
-  <div class="page-content news-content">
-    <img src="{{ NEWS_IMAGE }}" />
-    <span class="news-date">{{ NEWS_DATE }}</span>
-    <div class="news-share">
-      <a href="#">
-        <img src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="64" viewBox="0 0 64 64" width="64"><path d="M48 39.3c-2.4 0-4.5 1-6 2.6L24.2 33.2c0.1-0.4 0.1-0.8 0.1-1.2 0-0.4 0-0.8-0.1-1.2l17.7-8.6c1.5 1.6 3.7 2.6 6.1 2.6 4.6 0 8.3-3.7 8.3-8.3 0-4.6-3.7-8.3-8.3-8.3s-8.3 3.7-8.3 8.3c0 0.4 0 0.8 0.1 1.2l-17.7 8.6c-1.5-1.6-3.7-2.6-6.1-2.6 -4.6 0-8.3 3.7-8.3 8.3 0 4.6 3.7 8.3 8.3 8.3 2.4 0 4.5-1 6-2.6l17.7 8.7c-0.1 0.4-0.1 0.8-0.1 1.2 0 4.6 3.7 8.3 8.3 8.3s8.3-3.7 8.3-8.3C56.3 43 52.6 39.3 48 39.3z" fill="#fff"/></svg>' />
-      </a>
-    </div>
-    <div class="content-block news-text">
-      <h2>{{ NEWS_TITLE }}</h2>
-      {{{ NEWS_DESC }}}
-      <br />
-      <div class="news-authors">
-        <p><strong>Author(s)</strong></p>
-        {{#each this}}
-          {{#authors}}
-          <i class="fa fa-user" aria-hidden="true"></i>
-          <span>{{first_name}} {{last_name}}</span>
-          <br />
-          {{/authors}}
-        {{/each}}
-      </center>
+  <div class="page-content">
+    <div class="news-content">
+      <img class="main-image" src="{{ NEWS_IMAGE }}" />
+      <span class="news-date">{{ NEWS_DATE }}</span>
+      <div class="news-share">
+        <a href="#">
+          <img src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="64" viewBox="0 0 64 64" width="64"><path d="M48 39.3c-2.4 0-4.5 1-6 2.6L24.2 33.2c0.1-0.4 0.1-0.8 0.1-1.2 0-0.4 0-0.8-0.1-1.2l17.7-8.6c1.5 1.6 3.7 2.6 6.1 2.6 4.6 0 8.3-3.7 8.3-8.3 0-4.6-3.7-8.3-8.3-8.3s-8.3 3.7-8.3 8.3c0 0.4 0 0.8 0.1 1.2l-17.7 8.6c-1.5-1.6-3.7-2.6-6.1-2.6 -4.6 0-8.3 3.7-8.3 8.3 0 4.6 3.7 8.3 8.3 8.3 2.4 0 4.5-1 6-2.6l17.7 8.7c-0.1 0.4-0.1 0.8-0.1 1.2 0 4.6 3.7 8.3 8.3 8.3s8.3-3.7 8.3-8.3C56.3 43 52.6 39.3 48 39.3z" fill="#fff"/></svg>' />
+        </a>
+      </div>
+      <div class="content-block news-text">
+        <h2>{{ NEWS_TITLE }}</h2>
+        {{{ NEWS_DESC }}}
+        <br />
+        <div class="news-authors">
+          <p><strong>Author(s)</strong></p>
+          {{#each this}}
+            {{#authors}}
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <span>{{first_name}} {{last_name}}</span>
+            <br />
+            {{/authors}}
+          {{/each}}
+        </center>
+      </div>
     </div>
   </div>
 </div>
