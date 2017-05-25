@@ -17,6 +17,8 @@
       EPFLNews.App = new Framework7({
         modalTitle: 'EPFL News',
         material:   true,
+        pushState:  true,
+        pushStateSeparator: '#page/',
       });
 
       // Add main view
