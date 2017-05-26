@@ -29,7 +29,7 @@
         NEWS_TITLE: newsList[i].title,
         NEWS_SUBTITLE: newsList[i].subtitle,
         NEWS_IMAGE: newsList[i].visual,
-        NEWS_DATE: newsList[i].publish_date,
+        NEWS_DATE: EPFLNews.Utils.formatDate(newsList[i].publish_date),
         BLOCK_BACK: i % 2 === 0 ? '' : 'gray-background',
       });
     }

@@ -18,6 +18,7 @@ module.exports = {
           '/js/templates/all.js',
           '/js/utils/Constants.js',
           '/js/utils/Events.js',
+          '/js/utils/Utils.js',
           '/js/controllers/MainController.js',
           '/js/views/MainView.js',
           '/js/views/NewsView.js',
