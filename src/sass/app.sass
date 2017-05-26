@@ -6,6 +6,12 @@ $epfl-color: #ed1c24
 .color-epfl
   color: $epfl-color
 
+.separator
+  margin: 0 16px
+  border: 1px solid #ccc
+  display: block
+  clear: both
+
 .news-block
   .gray-background
     background-color: #f2f2f2
@@ -45,7 +51,7 @@ $epfl-color: #ed1c24
     color: #666
 
     h2
-      text-align: left
+      text-align: center
       color: #111
 
   .news-authors
@@ -54,12 +60,18 @@ $epfl-color: #ed1c24
       vertical-align: middle
 
   @media screen and (max-width: 425px) and (orientation: portrait)
-    .main-image
+    .separator
+      display: none
+
+    .main-image, iframe
       width: 100%
 
     .news-text
       h2
         text-align: center
+
+      img
+        width: 100%
 
     .news-date
       background-color: $epfl-color
@@ -87,19 +99,37 @@ $epfl-color: #ed1c24
         vertical-align: middle
 
   @media screen and (min-width: 426px)
+    .news-text
+      img, iframe
+        display: block
+        margin: 0 auto
+
     .main-image
-      float: right
-      margin: 20px 16px
+      float: left
+      height: 30px
+      margin: 20px 10px 0 16px
 
     .news-date
       margin-left: 16px
-      margin-top: 20px
+      margin-top: 25px
       margin-bottom: 20px
       float: left
       color: $epfl-color
 
     .news-share
-      display: none
+      padding: 5px 5px
+      -moz-border-radius: 100px
+      -webkit-border-radius: 100px
+      border-radius: 30px
+      background-color: $epfl-color
+      margin-top: 15px
+      margin-right: 16px
+      float: right
+
+      img
+        width: 25px
+        height: 25px
+        vertical-align: middle
 
     h2
       clear: left
