@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="EPFL News Reader" src="https://raw.githubusercontent.com/epfl-devrun/epfl-news-reader/master/src/img/icons/icon-256.png" />
+  <img alt="EPFL News Reader" width=" 128" height=" 128" src="https://raw.githubusercontent.com/epfl-devrun/epfl-news-reader/master/src/img/icons/icon-512.png" />
 </p>
 
 <p align="center">
@@ -17,6 +17,27 @@
     <img alt="MIT License" src="https://img.shields.io/badge/license-Apache%202.0-blue.svg">
   </a>
 </p>
+
+Overview
+--------
+
+Very basic EPFL News Progressive Web App client.
+
+[Try the App](https://epfl-devrun.github.io/epfl-news-reader/)
+
+Features
+--------
+
+  * Progressive Web App
+    * Uses Service Worker to cache data and work offline
+    * App Manifest for installing to homescreen
+
+Screenshots
+-----------
+
+Home                                |  News
+:----------------------------------:|:--------------------------------------:		
+![Home](https://raw.githubusercontent.com/epfl-devrun/epfl-news-reader/master/doc/screenshot-1.png)|![News](https://raw.githubusercontent.com/epfl-devrun/epfl-news-reader/master/doc/screenshot-2.png)
 
 Contributing to EPFL News Reader
 --------------------------------
