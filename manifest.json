@@ -26,7 +26,7 @@
       "sizes": "512x512",
       "type": "image/png"
     }],
-  "start_url": "/index.html",
+  "start_url": "/epfl-news-reader/index.html",
   "display": "standalone",
   "background_color": "#ed1c24",
   "theme_color": "#ed1c24"
