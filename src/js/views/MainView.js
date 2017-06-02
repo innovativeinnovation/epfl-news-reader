@@ -10,7 +10,9 @@
   EPFLNews.MainView = function() {
     this.html = EPFLNews.Templates[
       EPFLNews.Constants.HANDLEBARS.MAIN
-    ]();
+    ]({
+      home: true,
+    });
   };
 
   EPFLNews.MainView.prototype.updateListNews = function(data) {

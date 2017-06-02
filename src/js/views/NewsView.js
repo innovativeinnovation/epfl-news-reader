@@ -16,7 +16,7 @@
       NEWS_DESC: this.cleanStyle(EPFLNews.data[id].text),
       NEWS_DATE: EPFLNews.Utils.formatDate(EPFLNews.data[id].publish_date),
       NEWS_AUTHORS: EPFLNews.data[id],
-      left: true,
+      news: true,
     });
   };
 
