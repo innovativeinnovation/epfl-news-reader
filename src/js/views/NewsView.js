@@ -13,7 +13,7 @@
     ]({
       NEWS_IMAGE: EPFLNews.data[id].visual,
       NEWS_TITLE: EPFLNews.data[id].title,
-      NEWS_DESC: this.cleanStyle(EPFLNews.data[id].text),
+      NEWS_DESC: this.cleanText(EPFLNews.data[id].text),
       NEWS_DATE: EPFLNews.Utils.formatDate(EPFLNews.data[id].publish_date),
       NEWS_AUTHORS: EPFLNews.data[id],
       news: true,
@@ -29,8 +29,13 @@
     }
   };
 
-  EPFLNews.NewsView.prototype.cleanStyle = function(text) {
-    return text.replace(/style="[a-zA-Z0-9:;\.\s\(\)\-\,]*"/gi);
+  EPFLNews.NewsView.prototype.cleanText = function(text) {
+    // Clean style
+    text = text.replace(/style="[a-zA-Z0-9:;\.\s\(\)\-\,]*"/gi);
+    // HTTP to HTTPS
+    text = text.replace(/http:\/\//g, 'https://');
+
+    return text;
   };
 
   EPFLNews.NewsView.prototype.buildNews = function() {
