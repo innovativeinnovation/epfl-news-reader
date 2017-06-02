@@ -20,7 +20,7 @@ module.exports = {
         'src/js/controllers/*.js',
         'src/js/app.js',
       ],
-      'www/service-worker-<%= pkg.version %>.min.js': [
+      'www/service-worker.js': [
         'build/service-worker.js',
       ],
     },
