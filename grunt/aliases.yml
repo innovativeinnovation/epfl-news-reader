@@ -26,6 +26,7 @@ release:
   - 'processhtml:release'
   - 'replace:indexCssJs'
   - 'copy:release'
+  - 'replace:manifestStartUrl'
 
 serve:
   - 'build'

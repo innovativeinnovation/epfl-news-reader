@@ -66,4 +66,18 @@ module.exports = {
       dest: 'www/',
     },],
   },
+  manifestStartUrl: {
+    options: {
+      patterns: [{
+        match: /\/index.html/g,
+        replacement: '/epfl-news-reader/index.html',
+      },],
+    },
+    files: [{
+      expand: true,
+      flatten: true,
+      src: ['www/manifest.json'],
+      dest: 'www/',
+    },],
+  },
 };
