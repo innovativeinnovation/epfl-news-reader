@@ -15,11 +15,10 @@
     var mainView = new EPFLNews.MainView();
     mainView.render();
 
-    var url = 'https://actu.epfl.ch/feeds/json/';
+    var url = 'https://actu.epfl.ch/api/jahia/channels/mediacom/news/en/';
     var params = {
-      channel: 'mediacom',
-      len: 50,
-      lang: 'en',
+      format: 'json',
+      limit: 50,
     };
 
     if ('caches' in window) {

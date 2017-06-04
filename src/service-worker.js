@@ -33,7 +33,7 @@ self.addEventListener('activate', function(e) {
 
 self.addEventListener('fetch', function(e) {
   console.log('INFO: ServiceWorker fetch', e.request.url);
-  var dataUrl = 'https://actu.epfl.ch/feeds/json/';
+  var dataUrl = 'https://actu.epfl.ch/api/jahia/';
   if (e.request.url.indexOf(dataUrl) > -1) {
     e.respondWith(
       caches.open(dataCacheName).then(function(cache) {

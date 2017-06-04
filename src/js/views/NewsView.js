@@ -11,7 +11,7 @@
     this.html = EPFLNews.Templates[
       EPFLNews.Constants.HANDLEBARS.NEWS
     ]({
-      NEWS_IMAGE: EPFLNews.data[id].visual,
+      NEWS_IMAGE: EPFLNews.data[id].news_visual_absolute_url,
       NEWS_TITLE: EPFLNews.data[id].title,
       NEWS_DESC: this.cleanText(EPFLNews.data[id].text),
       NEWS_DATE: EPFLNews.Utils.formatDate(EPFLNews.data[id].publish_date),
