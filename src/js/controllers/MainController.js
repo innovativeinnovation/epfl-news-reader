@@ -25,6 +25,7 @@
         if (response) {
           response.json().then(function updateFromCache(json) {
             mainView.updateListNews(json);
+            EPFLNews.App.initImagesLazyLoad(Dom7('.page[data-page="main"]'));
           });
         }
       });
@@ -32,6 +33,7 @@
 
     $$.get(url, params, function(data) {
       mainView.updateListNews(JSON.parse(data));
+      EPFLNews.App.initImagesLazyLoad(Dom7('.page[data-page="main"]'));
     });
 
   };
