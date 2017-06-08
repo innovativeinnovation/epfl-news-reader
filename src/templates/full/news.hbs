@@ -13,9 +13,10 @@
       <div class="content-block news-text">
         <h2>{{ NEWS_TITLE }}</h2>
         {{{ NEWS_DESC }}}
-        <br />
-        <div class="news-authors">
-          {{#if authors.length}}
+
+        {{#if authors.length}}
+          <br />
+          <div class="news-authors">
             <p><strong>Author(s)</strong></p>
             {{#each this}}
               {{#authors}}
@@ -24,9 +25,9 @@
               <br />
               {{/authors}}
             {{/each}}
-          {{/if}}
-          <br />
-        </center>
+            <br />
+          </div>
+        {{/if}}
       </div>
     </div>
   </div>
