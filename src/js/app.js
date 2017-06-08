@@ -16,6 +16,7 @@
       EPFLNews.App = new Framework7({
         modalTitle: 'EPFL News',
         material:   true,
+        swipeout: false,
         pushState:  false,
         pushStateSeparator: '#page/',
       });
