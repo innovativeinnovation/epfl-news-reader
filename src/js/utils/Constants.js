@@ -8,6 +8,8 @@
 
   EPFLNews.Constants = {
 
+    SUBTITLE_SIZE: 150,
+
     HANDLEBARS: {
       MAIN: 'src/templates/full/main.hbs',
       NEWS: 'src/templates/full/news.hbs',

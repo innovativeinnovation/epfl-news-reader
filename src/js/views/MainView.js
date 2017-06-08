@@ -28,13 +28,33 @@
       ]({
         NEWS_INDEX: i,
         NEWS_TITLE: newsList[i].title,
-        NEWS_SUBTITLE: newsList[i].subtitle,
+        NEWS_SUBTITLE: this.cleanSubtitle(newsList[i].subtitle),
         NEWS_IMAGE: newsList[i].news_visual_absolute_url,
         NEWS_DATE: EPFLNews.Utils.formatDate(newsList[i].publish_date),
         BLOCK_BACK: i % 2 === 0 ? '' : 'gray-background',
       });
     }
     return newsBlocks;
+  };
+
+  EPFLNews.MainView.prototype.cleanSubtitle = function(subtitle) {
+    var text = this.removeTag(subtitle);
+    text = this.trimToLength(text, EPFLNews.Constants.SUBTITLE_SIZE);
+    return this.createParagraph(text);
+  };
+
+  EPFLNews.MainView.prototype.trimToLength = function(text, length) {
+    return text.length > length ?
+      text.substring(0, length - 3) + '...' :
+      text.substring(0, length);
+  };
+
+  EPFLNews.MainView.prototype.removeTag = function(html) {
+    return $$('<p>').html(html).text();
+  };
+
+  EPFLNews.MainView.prototype.createParagraph = function(text) {
+    return '<p>' + text + '</p>';
   };
 
   EPFLNews.MainView.prototype.render = function() {
