@@ -30,7 +30,7 @@
         NEWS_TITLE: newsList[i].title,
         NEWS_SUBTITLE: this.cleanSubtitle(newsList[i].subtitle),
         NEWS_IMAGE: newsList[i].news_visual_absolute_url,
-        NEWS_DATE: EPFLNews.Utils.formatDate(newsList[i].publish_date),
+        NEWS_DATE: EPFLNews.Utils.prettyDate(newsList[i].publish_date),
         BLOCK_BACK: i % 2 === 0 ? '' : 'gray-background',
       });
     }
