@@ -12,6 +12,15 @@
       <div class="separator"></div>
       <div class="content-block news-text">
         <h2>{{ NEWS_TITLE }}</h2>
+
+        {{#if NEWS_VIDEO}}
+          <br />
+          <div class="videoWrapper">
+            {{{ NEWS_VIDEO }}}
+          </div>
+          <br />
+        {{/if}}
+
         {{{ NEWS_DESC }}}
 
         {{#if authors.length}}
