@@ -19,6 +19,7 @@
         swipeout: false,
         pushState:  false,
         pushStateSeparator: '#page/',
+        animatePages: false,
       });
 
       // Add main view
