@@ -39,6 +39,7 @@
 
     bindEvents: function() {
       EPFLNews.Events.onClickNews();
+      EPFLNews.Events.onClickAbout();
     },
 
     render: function() {

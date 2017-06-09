@@ -12,7 +12,6 @@ module.exports = {
         'js/**',
         'img/**',
         'css/**',
-        'index.html',
         'manifest.json',
         'service-worker.js',
       ],

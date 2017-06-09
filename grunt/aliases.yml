@@ -13,6 +13,7 @@ build:
   - 'prepare'
   - 'copy:build'
   - 'handlebars:build'
+  - 'processhtml:build'
   - 'sass:build'
   - 'replace:fileToCacheDev'
 

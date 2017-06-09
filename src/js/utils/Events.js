@@ -15,6 +15,13 @@
         view.addExternalLinkClass();
       });
     },
+
+    onClickAbout: function() {
+      $$(document).on('click', '.aboutLink', function() {
+        var view = new EPFLNews.AboutView($$(this).attr('news-index'));
+        view.render();
+      });
+    },
   };
 
 })(Dom7);
