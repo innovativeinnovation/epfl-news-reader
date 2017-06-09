@@ -13,7 +13,7 @@
       var diff    = (((new Date()).getTime() - date.getTime()) / 1000);
       var dayDiff = Math.floor(diff / 86400);
 
-      if (isNaN(dayDiff) || dayDiff < 0 || dayDiff >= 31) {
+      if (isNaN(dayDiff) || dayDiff < 0) {
         return;
       }
 
