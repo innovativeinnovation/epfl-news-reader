@@ -22,6 +22,7 @@ module.exports = {
           '/js/controllers/MainController.js',
           '/js/views/MainView.js',
           '/js/views/NewsView.js',
+          '/js/views/AboutView.js',
           '/js/app.js',
         ],
       },],
