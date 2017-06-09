@@ -11,6 +11,7 @@
       EPFLNews.Constants.HANDLEBARS.ABOUT
     ]({
       back: true,
+      NAVBAR_TITLE: 'About',
     });
   };
 

@@ -17,6 +17,7 @@
       NEWS_AUTHORS: EPFLNews.data[id],
       NEWS_VIDEO: EPFLNews.data[id].video,
       back: true,
+      NAVBAR_TITLE: EPFLNews.data[id].title,
     });
   };
 
