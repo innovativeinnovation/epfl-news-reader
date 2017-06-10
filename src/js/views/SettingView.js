@@ -12,6 +12,7 @@
     ]({
       back: true,
       NAVBAR_TITLE: 'Settings',
+      LANGUAGE_OPTIONS: this.buildLanguageOptions(),
     });
   };
 
@@ -20,6 +21,22 @@
       content: this.html,
       animatePages: false,
     });
+  };
+
+  EPFLNews.SettingView.prototype.buildLanguageOptions = function() {
+    var optionHtml = '';
+    for (var key in EPFLNews.Constants.SUPPORTED_LANGUAGE) {
+      if (EPFLNews.Constants.SUPPORTED_LANGUAGE.hasOwnProperty(key)) {
+        optionHtml += '<option value="' + key + '" ';
+        if (EPFLNews.language === key) {
+          optionHtml += 'selected';
+        }
+        optionHtml += '>';
+        optionHtml += EPFLNews.Constants.SUPPORTED_LANGUAGE[key];
+        optionHtml += '</option>';
+      }
+    }
+    return optionHtml;
   };
 
 })(Dom7);

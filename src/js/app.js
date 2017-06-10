@@ -42,6 +42,7 @@
       EPFLNews.Events.onClickNews();
       EPFLNews.Events.onClickAbout();
       EPFLNews.Events.onClickSetting();
+      EPFLNews.Events.onChangeLanguage();
     },
 
     render: function() {

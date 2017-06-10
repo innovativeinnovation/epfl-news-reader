@@ -30,6 +30,22 @@
       });
     },
 
+    /**
+     * When we select a new language (from settings)
+     *
+     * @method onChangeLanguage
+     * @static
+     */
+    onChangeLanguage: function() {
+      $$(document).on('change', '.select-language', function(event) {
+        var languageController = new EPFLNews.LanguageController();
+        languageController.changeLanguage(
+          $$('option:checked').val()
+        );
+        return false;
+      });
+    },
+
   };
 
 })(Dom7);

@@ -10,11 +10,16 @@
 
   EPFLNews.MainController.prototype.init = function() {
 
+    // Get the model and set language
+    var languageModel = new EPFLNews.LanguageModel();
+    EPFLNews.language = languageModel.getLanguage();
+
     // Render Main View
     var mainView = new EPFLNews.MainView();
     mainView.render();
 
-    var url = 'https://actu.epfl.ch/api/jahia/channels/mediacom/news/en/';
+    var url = 'https://actu.epfl.ch/api/jahia/channels/mediacom/news/' +
+      EPFLNews.language + '/';
     var params = {
       format: 'json',
       limit: 50,

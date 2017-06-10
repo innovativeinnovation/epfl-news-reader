@@ -8,6 +8,12 @@
 
   EPFLNews.Constants = {
 
+    DEFAULT_LANGUAGE: 'en',
+    SUPPORTED_LANGUAGE: {
+      en: 'English',
+      fr: 'Français',
+    },
+
     SUBTITLE_SIZE: 150,
 
     HANDLEBARS: {

@@ -18,6 +18,7 @@ module.exports = {
         'src/js/views/*.js',
         'src/js/utils/*.js',
         'src/js/models/abstract/*.js',
+        'src/js/models/*.js',
         'src/js/controllers/*.js',
         'src/js/app.js',
       ],

@@ -18,6 +18,7 @@
     "fetch": true,
     "Framework7": true,
     "localStorage": true,
+    "location": true,
     "navigator": true,
     "Promise": true,
     "self": true,
