@@ -17,6 +17,7 @@
     "EPFLNews": true,
     "fetch": true,
     "Framework7": true,
+    "localStorage": true,
     "navigator": true,
     "Promise": true,
     "self": true,

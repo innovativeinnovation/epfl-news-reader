@@ -17,6 +17,7 @@ module.exports = {
         'build/js/templates/all.js',
         'src/js/views/*.js',
         'src/js/utils/*.js',
+        'src/js/models/abstract/*.js',
         'src/js/controllers/*.js',
         'src/js/app.js',
       ],
