@@ -5,8 +5,8 @@
 
 'use strict';
 
-var dataCacheName = 'epfl-news-reader-data';
-var cacheName     = 'epfl-news-reader';
+var dataCacheName = '<DATA_CACHE>';
+var cacheName     = '<CACHE_NAME>';
 var filesToCache  = '<FILES_TO_CACHE>';
 
 self.addEventListener('install', function(e) {

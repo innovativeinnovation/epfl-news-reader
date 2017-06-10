@@ -31,6 +31,12 @@ module.exports = {
           '/js/views/SettingView.js',
           '/js/app.js',
         ],
+      },{
+        match: /<DATA_CACHE>/g,
+        replacement: 'epfl-news-data-' + new Date().getTime(),
+      },{
+        match: /<CACHE_NAME>/g,
+        replacement: 'epfl-news-' + new Date().getTime(),
       },],
     },
     files: [{
@@ -52,6 +58,12 @@ module.exports = {
           '/epfl-news-reader/css/epfl-news-<%= pkg.version %>.min.css',
           '/epfl-news-reader/js/epfl-news-<%= pkg.version %>.min.js',
         ],
+      },{
+        match: /<DATA_CACHE>/g,
+        replacement: 'epfl-news-data-<%= pkg.version %>',
+      },{
+        match: /<CACHE_NAME>/g,
+        replacement: 'epfl-news-<%= pkg.version %>',
       },],
     },
     files: [{
