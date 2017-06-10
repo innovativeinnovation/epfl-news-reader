@@ -15,6 +15,7 @@
       NEWS: 'src/templates/full/news.hbs',
       NEWS_BLOCK: 'src/templates/full/news-block.hbs',
       ABOUT: 'src/templates/full/about.hbs',
+      SETTING: 'src/templates/full/setting.hbs',
     },
 
   };

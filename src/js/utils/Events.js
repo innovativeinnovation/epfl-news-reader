@@ -18,10 +18,18 @@
 
     onClickAbout: function() {
       $$(document).on('click', '.aboutLink', function() {
-        var view = new EPFLNews.AboutView($$(this).attr('news-index'));
+        var view = new EPFLNews.AboutView();
         view.render();
       });
     },
+
+    onClickSetting: function() {
+      $$(document).on('click', '.settingLink', function() {
+        var view = new EPFLNews.SettingView();
+        view.render();
+      });
+    },
+
   };
 
 })(Dom7);

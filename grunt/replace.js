@@ -23,6 +23,7 @@ module.exports = {
           '/js/views/MainView.js',
           '/js/views/NewsView.js',
           '/js/views/AboutView.js',
+          '/js/views/SettingView.js',
           '/js/app.js',
         ],
       },],
