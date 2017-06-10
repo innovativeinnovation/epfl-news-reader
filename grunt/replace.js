@@ -11,6 +11,8 @@ module.exports = {
         replacement:  [
           '/',
           '/index.html',
+          '/img/favicon.ico',
+          '/img/favicon.png',
           '/css/framework7.material.custom.min.css',
           '/css/app.css',
           '/js/vendors/framework7.custom.min.js',
@@ -42,6 +44,8 @@ module.exports = {
         replacement:  [
           '/epfl-news-reader/',
           '/epfl-news-reader/index.html',
+          '/epfl-news-reader/img/favicon.ico',
+          '/epfl-news-reader/img/favicon.png',
           '/epfl-news-reader/css/epfl-news-<%= pkg.version %>.min.css',
           '/epfl-news-reader/js/epfl-news-<%= pkg.version %>.min.js',
         ],
