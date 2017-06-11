@@ -11,8 +11,11 @@
       EPFLNews.Constants.HANDLEBARS.SETTING
     ]({
       back: true,
-      NAVBAR_TITLE: 'Settings',
+      NAVBAR_TITLE: EPFLNews.i18n[EPFLNews.language].MENU_SETTING,
       LANGUAGE_OPTIONS: this.buildLanguageOptions(),
+      SETTING_LANGUAGE: EPFLNews.i18n[EPFLNews.language].SETTING_LANGUAGE,
+      SETTING_LANGUAGE_TITLE:
+        EPFLNews.i18n[EPFLNews.language].SETTING_LANGUAGE_TITLE,
     });
   };
 

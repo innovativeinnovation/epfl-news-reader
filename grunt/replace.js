@@ -21,6 +21,7 @@ module.exports = {
           '/js/utils/Constants.js',
           '/js/utils/Events.js',
           '/js/utils/Utils.js',
+          '/js/utils/i18n.js',
           '/js/models/abstract/StorageModel.js',
           '/js/models/LanguageModel.js',
           '/js/controllers/MainController.js',

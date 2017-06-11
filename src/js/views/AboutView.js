@@ -11,7 +11,9 @@
       EPFLNews.Constants.HANDLEBARS.ABOUT
     ]({
       back: true,
-      NAVBAR_TITLE: 'About',
+      NAVBAR_TITLE: EPFLNews.i18n[EPFLNews.language].MENU_ABOUT,
+      ABOUT_TEXT:  EPFLNews.i18n[EPFLNews.language].ABOUT_TEXT,
+      APP_VERSION: EPFLNews.version,
     });
   };
 

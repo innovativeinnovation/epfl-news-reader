@@ -37,14 +37,18 @@
     },
 
     formatDate: function(date) {
-      var days   = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
-      var months = ['January', 'February', 'March', 'April', 'May', 'June',
-        'July', 'August', 'September', 'October', 'November', 'December',
-      ];
+      var months = {
+        fr: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin',
+          'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre',
+        ],
+        en: ['January', 'February', 'March', 'April', 'May', 'June',
+          'July', 'August', 'September', 'October', 'November', 'December',
+        ],
+      };
 
       var r = [
         date.getDate(),
-        months[date.getMonth()],
+        months[EPFLNews.language][date.getMonth()],
         date.getFullYear(),
       ];
       return r.join(' ');

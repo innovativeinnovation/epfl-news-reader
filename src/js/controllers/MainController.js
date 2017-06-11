@@ -18,6 +18,9 @@
     var mainView = new EPFLNews.MainView();
     mainView.render();
 
+    // Render panel
+    mainView.updatePanel();
+
     var url = 'https://actu.epfl.ch/api/jahia/channels/mediacom/news/' +
       EPFLNews.language + '/';
     var params = {

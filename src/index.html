@@ -30,28 +30,30 @@
       </div>
     </div>
     <div class="page-content">
-      <div class="content-block-title">Menu</div>
-      <div class="list-block">
-        <ul>
-          <li>
-            <a href="#" class="item-link close-panel aboutLink">
-              <div class="item-content">
-                <div class="item-inner">
-                  <div class="item-title">About</div>
+      <div id="panel-content">
+        <div class="content-block-title">Menu</div>
+        <div class="list-block">
+          <ul>
+            <li>
+              <a href="#" class="item-link close-panel aboutLink">
+                <div class="item-content">
+                  <div class="item-inner">
+                    <div class="item-title">About</div>
+                  </div>
                 </div>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="item-link close-panel settingLink">
-              <div class="item-content">
-                <div class="item-inner">
-                  <div class="item-title">Settings</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="item-link close-panel settingLink">
+                <div class="item-content">
+                  <div class="item-inner">
+                    <div class="item-title">Settings</div>
+                  </div>
                 </div>
-              </div>
-            </a>
-          </li>
-        </ul>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
@@ -170,6 +172,7 @@
   <script type="text/javascript" src="js/utils/Constants.js"></script>
   <script type="text/javascript" src="js/utils/Events.js"></script>
   <script type="text/javascript" src="js/utils/Utils.js"></script>
+  <script type="text/javascript" src="js/utils/i18n.js"></script>
   <script type="text/javascript" src="js/models/abstract/StorageModel.js"></script>
   <script type="text/javascript" src="js/models/LanguageModel.js"></script>
   <script type="text/javascript" src="js/controllers/MainController.js"></script>
@@ -180,6 +183,12 @@
   <script type="text/javascript" src="js/views/SettingView.js"></script>
   <script type="text/javascript" src="js/app.js"></script>
   <!-- /build -->
+
+  <!-- build:template
+  <script type="text/javascript">
+    EPFLNews.version = '<%= version %>'
+  </script>
+  /build -->
 
 </body>
 

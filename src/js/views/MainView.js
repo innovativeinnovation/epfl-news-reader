@@ -11,7 +11,7 @@
       EPFLNews.Constants.HANDLEBARS.MAIN
     ]({
       home: true,
-      NAVBAR_TITLE: 'EPFL News',
+      NAVBAR_TITLE: EPFLNews.i18n[EPFLNews.language].APP_TITLE,
     });
   };
 
@@ -19,6 +19,16 @@
     EPFLNews.data = data;
     var newsBlock = this.buildListNews(data);
     $$('#news-block-container').html(newsBlock);
+  };
+
+  EPFLNews.MainView.prototype.updatePanel = function(data) {
+    var html = EPFLNews.Templates[
+      EPFLNews.Constants.HANDLEBARS.PANEL
+    ]({
+      MENU_ABOUT: EPFLNews.i18n[EPFLNews.language].MENU_ABOUT,
+      MENU_SETTING: EPFLNews.i18n[EPFLNews.language].MENU_SETTING,
+    });
+    $$('#panel-content').html(html);
   };
 
   EPFLNews.MainView.prototype.buildListNews = function(newsList) {
