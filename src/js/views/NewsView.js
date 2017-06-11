@@ -16,6 +16,7 @@
       NEWS_DATE: EPFLNews.Utils.prettyDate(EPFLNews.data[id].publish_date),
       NEWS_AUTHORS: EPFLNews.data[id],
       NEWS_VIDEO: EPFLNews.data[id].video,
+      NEWS_URL: EPFLNews.data[id].absolute_slug,
       back: true,
       NAVBAR_TITLE: EPFLNews.data[id].title,
     });
