@@ -14,6 +14,18 @@
       fr: 'Français',
     },
 
+    DEFAULT_CHANNEL: 'mediacom',
+    SUPPORTED_CHANNEL: [
+      'cdh',
+      'cdm',
+      'enac',
+      'ic',
+      'mediacom',
+      'sb',
+      'sti',
+      'sv',
+    ],
+
     SUBTITLE_SIZE: 150,
 
     HANDLEBARS: {

@@ -40,7 +40,23 @@
       $$(document).on('change', '.select-language', function(event) {
         var languageController = new EPFLNews.LanguageController();
         languageController.changeLanguage(
-          $$('option:checked').val()
+          $$(this).find('option:checked').val()
+        );
+        return false;
+      });
+    },
+
+    /**
+     * When we select a new channel (from settings)
+     *
+     * @method onChangeChannel
+     * @static
+     */
+    onChangeChannel: function() {
+      $$(document).on('change', '.select-channel', function(event) {
+        var channelController = new EPFLNews.ChannelController();
+        channelController.changeChannel(
+          $$(this).find('option:checked').val()
         );
         return false;
       });

@@ -11,7 +11,8 @@
       EPFLNews.Constants.HANDLEBARS.MAIN
     ]({
       home: true,
-      NAVBAR_TITLE: EPFLNews.i18n[EPFLNews.language].APP_TITLE,
+      NAVBAR_TITLE: EPFLNews.i18n[EPFLNews.language].APP_TITLE +
+        ' - ' + EPFLNews.i18n[EPFLNews.language][EPFLNews.channel],
     });
   };
 
@@ -56,7 +57,7 @@
 
   EPFLNews.MainView.prototype.trimToLength = function(text, length) {
     return text.length > length ?
-      text.substring(0, length - 3) + '...' :
+      text.substring(0, length - 3) + '... »' :
       text.substring(0, length);
   };
 

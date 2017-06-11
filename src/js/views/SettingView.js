@@ -16,6 +16,10 @@
       SETTING_LANGUAGE: EPFLNews.i18n[EPFLNews.language].SETTING_LANGUAGE,
       SETTING_LANGUAGE_TITLE:
         EPFLNews.i18n[EPFLNews.language].SETTING_LANGUAGE_TITLE,
+      SETTING_CHANNEL: EPFLNews.i18n[EPFLNews.language].SETTING_CHANNEL,
+      SETTING_CHANNEL_TITLE:
+        EPFLNews.i18n[EPFLNews.language].SETTING_CHANNEL_TITLE,
+      CHANNEL_OPTIONS: this.buildChannelOptions(),
     });
   };
 
@@ -38,6 +42,22 @@
         optionHtml += EPFLNews.Constants.SUPPORTED_LANGUAGE[key];
         optionHtml += '</option>';
       }
+    }
+    return optionHtml;
+  };
+
+  EPFLNews.SettingView.prototype.buildChannelOptions = function() {
+    var optionHtml = '';
+    for (var i = 0; i < EPFLNews.Constants.SUPPORTED_CHANNEL.length; i++) {
+      optionHtml += '<option value="' +
+        EPFLNews.Constants.SUPPORTED_CHANNEL[i] + '" ';
+      if (EPFLNews.channel === EPFLNews.Constants.SUPPORTED_CHANNEL[i]) {
+        optionHtml += 'selected';
+      }
+      optionHtml += '>';
+      optionHtml += EPFLNews.i18n[EPFLNews.language]
+        [EPFLNews.Constants.SUPPORTED_CHANNEL[i]];
+      optionHtml += '</option>';
     }
     return optionHtml;
   };

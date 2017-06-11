@@ -18,6 +18,17 @@
 
     SETTING_LANGUAGE: 'Language',
     SETTING_LANGUAGE_TITLE: 'Choose your prefered language',
+    SETTING_CHANNEL: 'Channel',
+    SETTING_CHANNEL_TITLE: 'Choose you prefered channel',
+
+    cdh: 'CDH',
+    cdm: 'CDM',
+    enac: 'ENAC',
+    ic: 'IC',
+    mediacom: 'Mediacom',
+    sb: 'SB',
+    sti: 'STI',
+    sv: 'SV',
   };
 
   EPFLNews.i18n.fr = {
@@ -30,6 +41,17 @@
 
     SETTING_LANGUAGE: 'Langue',
     SETTING_LANGUAGE_TITLE: 'Choisissez votre langue',
+    SETTING_CHANNEL: 'Canal',
+    SETTING_CHANNEL_TITLE: 'Choisissez votre canal',
+
+    cdh: 'CDH',
+    cdm: 'CDM',
+    enac: 'ENAC',
+    ic: 'IC',
+    mediacom: 'Mediacom',
+    sb: 'SB',
+    sti: 'STI',
+    sv: 'SV',
   };
 
 })();

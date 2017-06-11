@@ -14,6 +14,10 @@
     var languageModel = new EPFLNews.LanguageModel();
     EPFLNews.language = languageModel.getLanguage();
 
+    // Get the model and set channel
+    var channelModel = new EPFLNews.ChannelModel();
+    EPFLNews.channel = channelModel.getChannel();
+
     // Render Main View
     var mainView = new EPFLNews.MainView();
     mainView.render();
@@ -21,8 +25,8 @@
     // Render panel
     mainView.updatePanel();
 
-    var url = 'https://actu.epfl.ch/api/jahia/channels/mediacom/news/' +
-      EPFLNews.language + '/';
+    var url = 'https://actu.epfl.ch/api/jahia/channels/' + EPFLNews.channel +
+      '/news/' + EPFLNews.language + '/';
     var params = {
       format: 'json',
       limit: 50,
