@@ -1,0 +1,104 @@
+//
+// (c) ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, VPSI, 2017.
+// See the LICENSE file for more details.
+//
+
+.news-content
+  a
+    text-decoration: none
+    border-bottom: 1px dotted
+    color: $text-color
+
+  a:hover
+    text-decoration: none
+    border-bottom: 1px solid
+
+  .news-text
+    margin: 0
+    text-align: justify
+    color: $text-color
+
+    h2
+      text-align: center
+      color: $news-title-color
+
+  .news-authors
+    i
+      font-size: 1.3em
+      vertical-align: middle
+
+  @media screen and (max-width: 425px) and (orientation: portrait)
+    .separator
+      display: none
+
+    .main-image, iframe
+      width: 100%
+
+    .news-text
+      h2
+        text-align: center
+        margin-top: 25px
+
+      img
+        width: 100%
+
+    .news-date
+      background-color: $epfl-color
+      color: white
+      padding: 5px 10px
+      border-radius: 10px
+      position: absolute
+      margin-left: 16px
+      margin-top: -20px
+
+    .news-share
+      padding: 8px 8px
+      -moz-border-radius: 100px
+      -webkit-border-radius: 100px
+      border-radius: 30px
+      background-color: $epfl-color
+      position: absolute
+      right: 0
+      margin-right: 16px
+      margin-top: -25px
+
+      img
+        width: 20px
+        height: 20px
+        vertical-align: middle
+
+  @media screen and (min-width: 426px)
+    .news-text
+      img, iframe
+        display: block
+        margin: 0 auto
+
+    .main-image
+      float: left
+      height: 30px
+      margin: 20px 10px 0 16px
+
+    .news-date
+      margin-left: 16px
+      margin-top: 25px
+      margin-bottom: 20px
+      float: left
+      color: $epfl-color
+
+    .news-share
+      padding: 8px 8px
+      -moz-border-radius: 100px
+      -webkit-border-radius: 100px
+      border-radius: 30px
+      background-color: $epfl-color
+      margin-top: 15px
+      margin-right: 16px
+      float: right
+
+      img
+        width: 20px
+        height: 20px
+        vertical-align: middle
+
+    h2
+      clear: left

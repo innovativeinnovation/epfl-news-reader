@@ -1,0 +1,43 @@
+//
+// (c) ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, VPSI, 2017.
+// See the LICENSE file for more details.
+//
+
+.news-block
+  .gray-background
+    background-color: $news-block-color
+
+  .content-block
+    margin: 0
+    padding: 16px
+
+    p
+      text-align: justify
+      margin: 10px 0 0 0
+      color: $text-color
+
+  img
+    float: right
+    margin: 0 0 10px 10px
+    max-width: 250px
+    width: 45%
+    background-color: $img-background-color
+    color: $img-alt-color
+
+  h2
+    font-size: 1.1em
+    margin: 5px 0 5px 0
+    color: $news-title-color
+
+@media screen and (min-width: 768px)
+  .news-block
+    border: 1px solid $news-block-color
+
+    .content-block
+      height: 172px
+
+      h2
+        margin: 0
+
+    img
+      margin-bottom: 0
