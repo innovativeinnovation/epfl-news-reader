@@ -13,6 +13,8 @@
       <div class="content-block news-text">
         <h2>{{ NEWS_TITLE }}</h2>
 
+        {{{ NEWS_DESC }}}
+
         {{#if NEWS_VIDEO}}
           <br />
           <div class="videoWrapper">
@@ -20,8 +22,6 @@
           </div>
           <br />
         {{/if}}
-
-        {{{ NEWS_DESC }}}
 
         {{#if authors.length}}
           <br />
