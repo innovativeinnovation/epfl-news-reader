@@ -57,6 +57,10 @@
       return r.join(' ');
     },
 
+    doublePictureSize: function(link) {
+      return link.replace('324x182', '648x364');
+    },
+
   };
 
 })();
