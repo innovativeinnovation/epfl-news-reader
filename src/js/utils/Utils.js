@@ -9,7 +9,10 @@
   EPFLNews.Utils = {
 
     prettyDate: function(time) {
-      var date    = new Date(time);
+      var numbers = time.split(/[^0-9]/);
+      var date    = new Date (
+        numbers[0],numbers[1] - 1,numbers[2],numbers[3],numbers[4],numbers[5]
+      );
       var diff    = (((new Date()).getTime() - date.getTime()) / 1000);
       var dayDiff = Math.floor(diff / 86400);
 
