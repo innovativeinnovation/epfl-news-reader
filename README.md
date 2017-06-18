@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  EPFL News as a Progressive Web Apps.
+  EPFL News as a Progressive Web App.
 </p>
 
 <p align="center">
