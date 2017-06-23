@@ -58,7 +58,10 @@
     },
 
     doublePictureSize: function(link) {
-      return link.replace('324x182', '648x364');
+      if (link) {
+        return link.replace('324x182', '648x364');
+      }
+      return link;
     },
 
   };
