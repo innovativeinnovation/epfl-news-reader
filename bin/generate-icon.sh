@@ -24,3 +24,13 @@ do
   optipng $BUILD_DIR/icon.png
   cp $BUILD_DIR/icon.png src/img/icons/"${target[$i]}".png
 done
+
+# Apple touch icons
+target=( touch-icon-iphone-retina touch-icon-ipad-retina touch-icon-ipad touch-icon-iphone )
+size=(180 167 152 120)
+for ((i=0; i < ${#target[@]}; i++))
+do
+  convert -density 72 -resize "${size[$i]}"x"${size[$i]}" assets/gimp/news-icon.png $BUILD_DIR/icon.png
+  optipng $BUILD_DIR/icon.png
+  cp $BUILD_DIR/icon.png src/img/icons/"${target[$i]}".png
+done
