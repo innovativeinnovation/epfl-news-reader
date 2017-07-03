@@ -22,6 +22,7 @@
     "navigator": true,
     "Promise": true,
     "self": true,
+    "sprintf": true,
     "window": true
   }
 }

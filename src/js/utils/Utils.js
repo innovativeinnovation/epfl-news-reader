@@ -22,13 +22,15 @@
 
       var r = (
         (dayDiff === 0 && (
-          (diff < 60 && 'just now') ||
-          (diff < 120 && '1 minute ago') ||
-          (diff < 3600 && Math.floor(diff / 60) + ' minutes ago') ||
-          (diff < 7200 && '1 hour ago') ||
-          (diff < 86400 && Math.floor(diff / 3600) + ' hours ago')
-        )) ||
-        (dayDiff === 1 && 'Yesterday at ' + EPFLNews.Utils.prettyTime(date)) ||
+          (diff < 60 && EPFLNews.Utils.getLangValue('TIME_NOW')) ||
+          (diff < 120 && EPFLNews.Utils.getLangValue('TIME_MINUTE_AGO')) ||
+          (diff < 3600 && EPFLNews.Utils.getLangValue(
+            'TIME_MINUTES_AGO', Math.floor(diff / 60))) ||
+          (diff < 7200 && EPFLNews.Utils.getLangValue('TIME_HOUR_AGO')) ||
+          (diff < 86400 && EPFLNews.Utils.getLangValue(
+            'TIME_HOURS_AGO', Math.floor(diff / 3600))))) ||
+        (dayDiff === 1 && EPFLNews.Utils.getLangValue('TIME_YESTERDAY') +
+          ' ' + EPFLNews.Utils.prettyTime(date)) ||
         (EPFLNews.Utils.formatDate(date))
       );
       return r;
@@ -62,6 +64,19 @@
         return link.replace('324x182', '648x364');
       }
       return link;
+    },
+
+    getLangValue: function(key, data) {
+      var value = null;
+      if (EPFLNews.i18n[EPFLNews.language][key]) {
+        value = EPFLNews.i18n[EPFLNews.language][key];
+      } else {
+        value = EPFLNews.i18n[EPFLNews.Constants.DEFAULT_LANGUAGE][key];
+      }
+      if (typeof data !== 'undefined') {
+        value = sprintf(value, data);
+      }
+      return value;
     },
 
   };
