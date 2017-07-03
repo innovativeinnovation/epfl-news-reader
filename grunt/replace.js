@@ -16,6 +16,7 @@ module.exports = {
           '/css/framework7.material.custom.min.css',
           '/css/app.css',
           '/js/vendors/framework7.custom.min.js',
+          '/js/vendors/sprintf.min.js',
           '/js/handlebars.runtime.min.js',
           '/js/templates/all.js',
           '/js/utils/Constants.js',
