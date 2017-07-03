@@ -2,17 +2,26 @@
 <html lang="en">
 
 <head>
-  <title>EPFL News Reader</title>
-  <meta name="description" content="EPFL News Reader">
+  <title>EPFL News as a Progressive Web App</title>
+  <meta name="description" content="Very basic EPFL News Progressive Web App client. Service Worker to cache data and work offline. App Manifest for installing to homescreen.">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#ae0010">
 
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="EPFL News">
+
   <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
   <link rel="icon" type="image/png" href="img/favicon.png" />
 
-  <link rel="stylesheet" href="css/epfl-news-0.0.2.min.css"/>
+  <link rel="apple-touch-icon" href="img/icons/touch-icon-iphone.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/icons/touch-icon-ipad.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/icons/touch-icon-iphone-retina.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="img/icons/touch-icon-ipad-retina.png">
+
+  <link rel="stylesheet" href="css/epfl-news-0.0.3.min.css"/>
 
   <link rel="manifest" href="manifest.json">
 </head>
@@ -162,10 +171,10 @@
     var EPFLNews = { Views: {} };
   </script>
 
-  <script src="js/epfl-news-0.0.2.min.js"></script>
+  <script src="js/epfl-news-0.0.3.min.js"></script>
 
   <script type="text/javascript">
-  EPFLNews.version = '0.0.2'
+  EPFLNews.version = '0.0.3'
   </script>
 
 </body>
