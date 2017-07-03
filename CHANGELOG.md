@@ -1,5 +1,13 @@
-EPFL News Reader Changelog
-==========================
+Changelog
+=========
+
+### v0.0.3 / 2017-07-03
+
+  - Add Apple touch icons
+  - Increase image size
+  - Update title and description
+  - Fix time and date parsing with Safari
+  - Move videos at bottom
 
 ### v0.0.2 / 2017-06-16
 
