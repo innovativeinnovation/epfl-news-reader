@@ -12,6 +12,6 @@
   "license": "Apache-2.0",
   "repository": "https://github.com/epfl-devrun/epfl-news-reader.git",
   "dependencies": {
-    "handlebars": "4.0.10"
+    "handlebars": "4.0.11"
   }
 }
