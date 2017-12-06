@@ -1,6 +1,11 @@
 Changelog
 =========
 
+### v0.0.4 / 2017-12-06
+
+  - Update dependencies
+  - Fix SVG share icon
+
 ### v0.0.3 / 2017-07-03
 
   - Add Apple touch icons
