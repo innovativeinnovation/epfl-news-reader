@@ -20,6 +20,7 @@
         pushState:  false,
         pushStateSeparator: '#page/',
         animatePages: false,
+        imagesLazyLoadPlaceholder: 'img/no-image.png',
       });
 
       // Add main view
