@@ -1,6 +1,10 @@
 Changelog
 =========
 
+### v0.0.5 / 2018-02-28
+
+  - Add default image with lazy loading
+
 ### v0.0.4 / 2017-12-06
 
   - Update dependencies
