@@ -13,6 +13,7 @@ module.exports = {
     files: {
       'www/js/epfl-news-<%= pkg.version %>.min.js': [
         'src/js/vendors/framework7.custom.min.js',
+        'src/js/vendors/sprintf.min.js',
         'bower_components/handlebars/handlebars.runtime.min.js',
         'build/js/templates/all.js',
         'src/js/views/*.js',
