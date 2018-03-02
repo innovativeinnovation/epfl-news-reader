@@ -1,6 +1,11 @@
 Changelog
 =========
 
+### v1.0.0 / 2018-03-02
+
+  - Implement Web Share API
+  - Update copyright
+
 ### v0.0.5 / 2018-02-28
 
   - Add default image with lazy loading
