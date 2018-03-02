@@ -1,7 +1,7 @@
 {
   "name": "epfl-news-reader",
   "private": true,
-  "version": "0.0.5",
+  "version": "1.0.0",
   "description": "EPFL News Reader",
   "keywords": [
     "EPFL",
