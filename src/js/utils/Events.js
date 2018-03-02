@@ -30,6 +30,26 @@
       });
     },
 
+    onClickShare: function() {
+      $$(document).on('click', '.shareLink', function() {
+        // Check if the current browser supports the Web Share API
+        var link = $$(this).attr('href');
+        if (navigator.share !== undefined) {
+          // Share the news
+          navigator.share({
+            title: $$(this).attr('newsTitle'),
+            url: link,
+          }, function() {
+            console.log('INFO: Successful share');
+          }, function(error) {
+            console.log('ERROR: Error sharing:', error);
+          });
+        } else {
+          window.open(link, '_blank');
+        }
+      });
+    },
+
     /**
      * When we select a new language (from settings)
      *
