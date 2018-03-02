@@ -16,6 +16,9 @@
   <a href="https://raw.githubusercontent.com/epfl-devrun/epfl-news-reader/master/LICENSE">
     <img alt="MIT License" src="https://img.shields.io/badge/license-Apache%202.0-blue.svg">
   </a>
+  <a href='https://github.com/epfl-devrun/epfl-news-reader/tags'>
+    <img alt="GitHub Tag" src="https://img.shields.io/github/tag/epfl-devrun/epfl-news-reader.svg" />
+  </a>
 </p>
 
 Overview
@@ -31,6 +34,7 @@ Features
   * Progressive Web App
     * Uses Service Worker to cache data and work offline
     * App Manifest for installing to homescreen
+    * Web Share API
 
 Screenshots
 -----------
