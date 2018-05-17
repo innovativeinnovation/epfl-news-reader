@@ -10,8 +10,8 @@
   <a href="https://travis-ci.org/epfl-devrun/epfl-news-reader">
     <img alt="Travis Status" src="https://travis-ci.org/epfl-devrun/epfl-news-reader.svg?branch=master">
   </a>
-  <a href='https://gemnasium.com/github.com/epfl-devrun/epfl-news-reader'>
-    <img alt="Dependency Status" src="https://gemnasium.com/badges/github.com/epfl-devrun/epfl-news-reader.svg" />
+  <a href="https://david-dm.org/epfl-devrun/epfl-news-reader">
+    <img alt="Dependency Status" src="https://david-dm.org/epfl-devrun/epfl-news-reader/status.svg"/>
   </a>
   <a href="https://raw.githubusercontent.com/epfl-devrun/epfl-news-reader/master/LICENSE">
     <img alt="MIT License" src="https://img.shields.io/badge/license-Apache%202.0-blue.svg">
