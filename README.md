@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="EPFL News Reader" width=" 128" height=" 128" src="https://raw.githubusercontent.com/epfl-devrun/epfl-news-reader/master/src/img/icons/icon-512.png" />
+  <img alt="EPFL News Reader" width=" 128" height=" 128" src="https://raw.githubusercontent.com/innovativeinnovation/epfl-news-reader/master/src/img/icons/icon-512.png" />
 </p>
 
 <p align="center">
@@ -7,17 +7,17 @@
 </p>
 
 <p align="center">
-  <a href="https://travis-ci.org/epfl-devrun/epfl-news-reader">
-    <img alt="Travis Status" src="https://travis-ci.org/epfl-devrun/epfl-news-reader.svg?branch=master">
+  <a href="https://travis-ci.org/innovativeinnovation/epfl-news-reader">
+    <img alt="Travis Status" src="https://travis-ci.org/innovativeinnovation/epfl-news-reader.svg?branch=master">
   </a>
-  <a href="https://david-dm.org/epfl-devrun/epfl-news-reader">
-    <img alt="Dependency Status" src="https://david-dm.org/epfl-devrun/epfl-news-reader/status.svg"/>
+  <a href="https://david-dm.org/innovativeinnovation/epfl-news-reader">
+    <img alt="Dependency Status" src="https://david-dm.org/innovativeinnovation/epfl-news-reader/status.svg"/>
   </a>
-  <a href="https://raw.githubusercontent.com/epfl-devrun/epfl-news-reader/master/LICENSE">
+  <a href="https://raw.githubusercontent.com/innovativeinnovation/epfl-news-reader/master/LICENSE">
     <img alt="MIT License" src="https://img.shields.io/badge/license-Apache%202.0-blue.svg">
   </a>
-  <a href='https://github.com/epfl-devrun/epfl-news-reader/tags'>
-    <img alt="GitHub Tag" src="https://img.shields.io/github/tag/epfl-devrun/epfl-news-reader.svg" />
+  <a href='https://github.com/innovativeinnovation/epfl-news-reader/tags'>
+    <img alt="GitHub Tag" src="https://img.shields.io/github/tag/innovativeinnovation/epfl-news-reader.svg" />
   </a>
 </p>
 
@@ -26,7 +26,7 @@ Overview
 
 Very basic EPFL News Progressive Web App client.
 
-[Try the App](https://epfl-devrun.github.io/epfl-news-reader/)
+[Try the App](https://innovativeinnovation.github.io/epfl-news-reader/)
 
 Features
 --------
@@ -41,7 +41,7 @@ Screenshots
 
 Home                                |  News
 :----------------------------------:|:--------------------------------------:		
-![Home](https://raw.githubusercontent.com/epfl-devrun/epfl-news-reader/master/doc/screenshot-1.png)|![News](https://raw.githubusercontent.com/epfl-devrun/epfl-news-reader/master/doc/screenshot-2.png)
+![Home](https://raw.githubusercontent.com/innovativeinnovation/epfl-news-reader/master/doc/screenshot-1.png)|![News](https://raw.githubusercontent.com/innovativeinnovation/epfl-news-reader/master/doc/screenshot-2.png)
 
 Contributing to EPFL News Reader
 --------------------------------
