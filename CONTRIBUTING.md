@@ -10,30 +10,29 @@ Setup
 Clone the repo:
 
 ```bash
-$ git clone git@github.com:innovativeinnovation/epfl-news-reader.git
-$ cd epfl-news-reader
+git clone git@github.com:innovativeinnovation/epfl-news-reader.git
+cd epfl-news-reader
 ```
 
 You need to have Node.js, then:
 
 ```bash
-$ npm install -g grunt bower
-$ npm install
-$ bower install
+npm install -g grunt
+npm i
 ```
 
 Test
 ----
 
 ```bash
-$ npm test
+npm t
 ```
 
 Run
 ---
 
 ```bash
-$ grunt
+grunt
 ```
 
 This will start a server on http://localhost:8100
