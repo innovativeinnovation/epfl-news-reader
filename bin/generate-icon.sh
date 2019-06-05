@@ -35,3 +35,9 @@ do
   optipng $BUILD_DIR/icon.png
   cp $BUILD_DIR/icon.png src/img/icons/"${target[$i]}".png
 done
+
+# Favicons
+convert -density 72 -resize 32x32 assets/gimp/news-icon.png src/img/favicon-32.png
+convert -density 72 -resize 16x16 assets/gimp/news-icon.png src/img/favicon.png
+optipng src/img/*.png
+convert $BUILD_DIR/favicon.png $BUILD_DIR/favicon-32.png -colors 256 src/img/favicon.ico
