@@ -21,7 +21,7 @@ module.exports = {
       nonull: true,
     },{
       expand: true,
-      cwd: 'bower_components/handlebars/',
+      cwd: 'node_modules/handlebars/dist/',
       src: [
         'handlebars.runtime.min.js',
       ],
