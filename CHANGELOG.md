@@ -1,6 +1,16 @@
 Changelog
 =========
 
+### v1.1.0 / 2019-06-06
+
+  - Update favicons
+  - Update dependencies
+  - Remove bower
+  - Move to david-dm (watching deps)
+  - Disable `package-lock.json`
+  - Fix width of image inside news with desktop
+  - Fix aria label on menu
+
 ### v1.0.0 / 2018-03-02
 
   - Implement Web Share API
