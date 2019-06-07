@@ -1,6 +1,11 @@
 Changelog
 =========
 
+### v1.1.1 / 2019-06-07
+
+  - Add small space before end of news
+  - Fix display of Youtube video inside news
+
 ### v1.1.0 / 2019-06-06
 
   - Update favicons
