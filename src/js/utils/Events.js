@@ -15,6 +15,7 @@
         var view = new EPFLNews.NewsView($$(this).attr('news-index'));
         view.render();
         view.addExternalLinkClass();
+        view.wrapIframe();
       });
     },
 

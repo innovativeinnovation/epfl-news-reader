@@ -35,6 +35,17 @@
     }
   };
 
+  EPFLNews.NewsView.prototype.wrapIframe = function() {
+    var $$frames = $$('iframe');
+    for (var i = 0; i < $$frames.length; i++) {
+      var wrapper = document.createElement('div');
+      $$frames[i].parentNode.insertBefore(wrapper, $$frames[i]);
+      wrapper.appendChild($$frames[i]);
+      wrapper.classList.add('videoWrapper');
+    }
+  };
+
+
   EPFLNews.NewsView.prototype.cleanText = function(text) {
     // Clean style
     text = text.replace(/style="[a-zA-Z0-9:;\.\s\(\)\-\,]*"/gi);
