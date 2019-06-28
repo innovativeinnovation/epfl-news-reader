@@ -12,6 +12,8 @@
   "license": "Apache-2.0",
   "repository": "https://github.com/innovativeinnovation/epfl-news-reader.git",
   "scripts": {
+    "release": "grunt release",
+    "serve": "grunt",
     "test": "grunt test"
   },
   "devDependencies": {

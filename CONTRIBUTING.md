@@ -1,23 +1,15 @@
 Contributing
 ============
 
-Welcome, so you are thinking about contributing to EPFL News Reader ?
+Welcome, so you are thinking about contributing?
 Awesome, this a great place to start.
 
 Setup
 -----
 
-Clone the repo:
-
 ```bash
 git clone git@github.com:innovativeinnovation/epfl-news-reader.git
 cd epfl-news-reader
-```
-
-You need to have Node.js, then:
-
-```bash
-npm install -g grunt
 npm i
 ```
 
@@ -32,10 +24,17 @@ Run
 ---
 
 ```bash
-grunt
+npm run serve
 ```
 
 This will start a server on http://localhost:8100
+
+Release
+-------
+
+```bash
+npm run release
+```
 
 License
 -------
