@@ -8,13 +8,13 @@
 
 <p align="center">
   <a href="https://travis-ci.org/innovativeinnovation/epfl-news-reader">
-    <img alt="Travis Status" src="https://travis-ci.org/innovativeinnovation/epfl-news-reader.svg?branch=master">
+    <img alt="Build Status" src="https://travis-ci.org/innovativeinnovation/epfl-news-reader.svg?branch=master">
   </a>
   <a href="https://david-dm.org/innovativeinnovation/epfl-news-reader">
-    <img alt="Dependency Status" src="https://david-dm.org/innovativeinnovation/epfl-news-reader/status.svg"/>
+    <img alt="Dependencies Status" src="https://david-dm.org/innovativeinnovation/epfl-news-reader/status.svg"/>
   </a>
   <a href="https://raw.githubusercontent.com/innovativeinnovation/epfl-news-reader/master/LICENSE">
-    <img alt="MIT License" src="https://img.shields.io/badge/license-Apache%202.0-blue.svg">
+    <img alt="Apache License 2.0" src="https://img.shields.io/badge/license-Apache%202.0-blue.svg">
   </a>
   <a href='https://github.com/innovativeinnovation/epfl-news-reader/tags'>
     <img alt="GitHub Tag" src="https://img.shields.io/github/tag/innovativeinnovation/epfl-news-reader.svg" />
@@ -43,8 +43,8 @@ Home                                |  News
 :----------------------------------:|:--------------------------------------:		
 ![Home](https://raw.githubusercontent.com/innovativeinnovation/epfl-news-reader/master/doc/screenshot-1.png)|![News](https://raw.githubusercontent.com/innovativeinnovation/epfl-news-reader/master/doc/screenshot-2.png)
 
-Contributing to EPFL News Reader
---------------------------------
+Contributing
+------------
 
 Contributions are always welcome.
 
