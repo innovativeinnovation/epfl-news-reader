@@ -5,11 +5,13 @@
  * See the LICENSE file for more details.
  */
 
+'use strict';
+
 module.exports = {
   options: {
     compress: {
-      drop_console: true,
-    },
+      drop_console: true
+    }
   },
   release: {
     files: {
@@ -23,11 +25,11 @@ module.exports = {
         'src/js/models/abstract/*.js',
         'src/js/models/*.js',
         'src/js/controllers/*.js',
-        'src/js/app.js',
+        'src/js/app.js'
       ],
       'www/service-worker.js': [
-        'build/service-worker.js',
-      ],
-    },
-  },
+        'build/service-worker.js'
+      ]
+    }
+  }
 };

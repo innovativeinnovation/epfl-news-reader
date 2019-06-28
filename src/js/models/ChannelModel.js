@@ -5,16 +5,16 @@
  * See the LICENSE file for more details.
  */
 
-(function() {
-  'use strict';
+'use strict';
 
+(function () {
   /**
    * Model for app channel
    *
    * @class ChannelModel
    * @constructor
    */
-  EPFLNews.ChannelModel = function() {
+  EPFLNews.ChannelModel = function () {
     // Call the parent constructor
     EPFLNews.StorageModel.call(this, 'EPFLNews-Channel');
   };
@@ -30,7 +30,7 @@
    * @method getChannel
    * @return {String} returns the channel
    */
-  EPFLNews.ChannelModel.prototype.getChannel = function() {
+  EPFLNews.ChannelModel.prototype.getChannel = function () {
     if (this.enabled) {
       var channel = this.get(this.key);
       if (channel === null) {
@@ -49,12 +49,11 @@
    * @param  channel
    * @return {String} returns the channel
    */
-  EPFLNews.ChannelModel.prototype.getDefaultChannel = function(channel) {
+  EPFLNews.ChannelModel.prototype.getDefaultChannel = function (channel) {
     var supportedChannel = EPFLNews.Constants.SUPPORTED_CHANNEL;
     if (supportedChannel.indexOf(channel) >= 0) {
       return channel;
     }
     return EPFLNews.Constants.DEFAULT_CHANNEL;
   };
-
 })();

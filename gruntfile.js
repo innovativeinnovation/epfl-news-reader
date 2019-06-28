@@ -5,12 +5,12 @@
  * See the LICENSE file for more details.
  */
 
-module.exports = function(grunt) {
-  'use strict';
+'use strict';
 
+module.exports = function (grunt) {
   require('load-grunt-config')(grunt, {
     data: {
-      pkg: grunt.file.readJSON('package.json'),
-    },
+      pkg: grunt.file.readJSON('package.json')
+    }
   });
 };

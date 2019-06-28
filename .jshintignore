@@ -1,4 +1,0 @@
-node_modules/**/*.js
-bower_components/**/*.js
-www/**
-src/js/vendors/**

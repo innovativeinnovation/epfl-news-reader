@@ -5,16 +5,16 @@
  * See the LICENSE file for more details.
  */
 
-(function() {
-  'use strict';
+'use strict';
 
+(function () {
   /**
    * Model for app language
    *
    * @class LanguageModel
    * @constructor
    */
-  EPFLNews.LanguageModel = function() {
+  EPFLNews.LanguageModel = function () {
     // Call the parent constructor
     EPFLNews.StorageModel.call(this, 'EPFLNews-Language');
   };
@@ -30,7 +30,7 @@
    * @method getLanguage
    * @return {String} returns the app language ('en', 'fr')
    */
-  EPFLNews.LanguageModel.prototype.getLanguage = function() {
+  EPFLNews.LanguageModel.prototype.getLanguage = function () {
     if (this.enabled) {
       var language = this.get(this.key);
       if (language === null) {
@@ -49,7 +49,7 @@
    * @method getNavigatorLanguage
    * @return {String} returns the browser language ('en', 'fr')
    */
-  EPFLNews.LanguageModel.prototype.getNavigatorLanguage = function() {
+  EPFLNews.LanguageModel.prototype.getNavigatorLanguage = function () {
     var navLang = navigator.language || navigator.userLanguage;
     var language = navLang.substring(0, 2);
     return language;
@@ -62,7 +62,7 @@
    * @param  language
    * @return {String} returns the app language ('en', 'fr')
    */
-  EPFLNews.LanguageModel.prototype.getDefaultLanguage = function(language) {
+  EPFLNews.LanguageModel.prototype.getDefaultLanguage = function (language) {
     var supportedLanguage = Object.keys(
       EPFLNews.Constants.SUPPORTED_LANGUAGE
     );
@@ -71,5 +71,4 @@
     }
     return EPFLNews.Constants.DEFAULT_LANGUAGE;
   };
-
 })();

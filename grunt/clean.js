@@ -5,8 +5,10 @@
  * See the LICENSE file for more details.
  */
 
+'use strict';
+
 module.exports = {
   build: {
-    src: ['www', 'build'],
-  },
+    src: ['www', 'build']
+  }
 };

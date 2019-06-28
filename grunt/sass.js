@@ -5,6 +5,8 @@
  * See the LICENSE file for more details.
  */
 
+'use strict';
+
 module.exports = {
   build: {
     files: [{
@@ -12,19 +14,19 @@ module.exports = {
       cwd: 'src/sass',
       src: ['**/*.sass'],
       dest: 'www/css/',
-      ext: '.css',
-    },],
+      ext: '.css'
+    }]
   },
   release: {
     options: {
-      sourcemap: 'none',
+      sourcemap: 'none'
     },
     files: [{
       expand: true,
       cwd: 'src/sass',
       src: ['**/*.sass'],
       dest: 'build/css/',
-      ext: '.css',
-    },],
-  },
+      ext: '.css'
+    }]
+  }
 };

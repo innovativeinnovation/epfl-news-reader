@@ -5,34 +5,34 @@
  * See the LICENSE file for more details.
  */
 
-(function(Framework7, $$) {
-  'use strict';
+'use strict';
 
+(function (Framework7, $$) {
   var epflNews = {
 
     // Init App
-    initialize: function() {
+    initialize: function () {
       console.log('INFO: init Framework7');
 
       // Init Framework7 App
       EPFLNews.App = new Framework7({
         modalTitle: 'EPFL News',
-        material:   true,
+        material: true,
         swipeout: false,
-        pushState:  false,
+        pushState: false,
         pushStateSeparator: '#page/',
         animatePages: false,
-        imagesLazyLoadPlaceholder: 'img/no-image.png',
+        imagesLazyLoadPlaceholder: 'img/no-image.png'
       });
 
       // Add main view
       EPFLNews.Views.viewMain = EPFLNews.App.addView('.view-main', {
-        dynamicNavbar: true,
+        dynamicNavbar: true
       });
 
       if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('./service-worker.js')
-          .then(function() {
+          .then(function () {
             console.log('INFO: ServiceWorker registered');
           });
       }
@@ -41,7 +41,7 @@
       this.render();
     },
 
-    bindEvents: function() {
+    bindEvents: function () {
       EPFLNews.Events.onClickNews();
       EPFLNews.Events.onClickAbout();
       EPFLNews.Events.onClickShare();
@@ -50,14 +50,13 @@
       EPFLNews.Events.onChangeLanguage();
     },
 
-    render: function() {
+    render: function () {
       $$('#static-start-content').remove();
       var mainController = new EPFLNews.MainController();
       mainController.init();
-    },
+    }
   };
 
   // Entry point
   epflNews.initialize();
-
 })(Framework7, Dom7);

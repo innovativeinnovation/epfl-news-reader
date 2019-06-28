@@ -5,13 +5,12 @@
  * See the LICENSE file for more details.
  */
 
-(function($$) {
-  'use strict';
+'use strict';
 
-  EPFLNews.MainController = function() {};
+(function ($$) {
+  EPFLNews.MainController = function () {};
 
-  EPFLNews.MainController.prototype.init = function() {
-
+  EPFLNews.MainController.prototype.init = function () {
     // Get the model and set language
     var languageModel = new EPFLNews.LanguageModel();
     EPFLNews.language = languageModel.getLanguage();
@@ -31,13 +30,13 @@
       '/news/' + EPFLNews.language + '/';
     var params = {
       format: 'json',
-      limit: 50,
+      limit: 50
     };
 
     if ('caches' in window) {
-      caches.match(url + '?' + $$.param(params)).then(function(response) {
+      caches.match(url + '?' + $$.param(params)).then(function (response) {
         if (response) {
-          response.json().then(function updateFromCache(json) {
+          response.json().then(function updateFromCache (json) {
             mainView.updateListNews(json);
             EPFLNews.App.initImagesLazyLoad(Dom7('.page[data-page="main"]'));
           });
@@ -45,11 +44,9 @@
       });
     }
 
-    $$.get(url, params, function(data) {
+    $$.get(url, params, function (data) {
       mainView.updateListNews(JSON.parse(data));
       EPFLNews.App.initImagesLazyLoad(Dom7('.page[data-page="main"]'));
     });
-
   };
-
 })(Dom7);

@@ -5,9 +5,9 @@
  * See the LICENSE file for more details.
  */
 
-(function() {
-  'use strict';
+'use strict';
 
+(function () {
   EPFLNews.i18n = {};
 
   EPFLNews.i18n.en = {
@@ -37,7 +37,7 @@
     mediacom: 'Mediacom',
     sb: 'SB',
     sti: 'STI',
-    sv: 'SV',
+    sv: 'SV'
   };
 
   EPFLNews.i18n.fr = {
@@ -67,7 +67,6 @@
     mediacom: 'Mediacom',
     sb: 'SB',
     sti: 'STI',
-    sv: 'SV',
+    sv: 'SV'
   };
-
 })();

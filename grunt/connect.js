@@ -5,13 +5,15 @@
  * See the LICENSE file for more details.
  */
 
+'use strict';
+
 module.exports = {
   build: {
     options: {
       port: 8100,
       base: 'www/',
       hostname: '*',
-      livereload: true,
-    },
-  },
+      livereload: true
+    }
+  }
 };

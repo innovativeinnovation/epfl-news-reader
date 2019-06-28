@@ -5,12 +5,14 @@
  * See the LICENSE file for more details.
  */
 
+'use strict';
+
 module.exports = {
   fileToCacheDev: {
     options: {
       patterns: [{
         match: /'<FILES_TO_CACHE>'/g,
-        replacement:  [
+        replacement: [
           '/',
           '/index.html',
           '/img/favicon.ico',
@@ -37,28 +39,28 @@ module.exports = {
           '/js/views/NewsView.js',
           '/js/views/AboutView.js',
           '/js/views/SettingView.js',
-          '/js/app.js',
-        ],
-      },{
+          '/js/app.js'
+        ]
+      }, {
         match: /<DATA_CACHE>/g,
-        replacement: 'epfl-news-data-' + new Date().getTime(),
-      },{
+        replacement: 'epfl-news-data-' + new Date().getTime()
+      }, {
         match: /<CACHE_NAME>/g,
-        replacement: 'epfl-news-' + new Date().getTime(),
-      },],
+        replacement: 'epfl-news-' + new Date().getTime()
+      }]
     },
     files: [{
       expand: true,
       flatten: true,
       src: ['src/service-worker.js'],
-      dest: 'www/',
-    },],
+      dest: 'www/'
+    }]
   },
   fileToCacheProd: {
     options: {
       patterns: [{
         match: /'<FILES_TO_CACHE>'/g,
-        replacement:  [
+        replacement: [
           '/epfl-news-reader/',
           '/epfl-news-reader/index.html',
           '/epfl-news-reader/img/favicon.ico',
@@ -66,49 +68,49 @@ module.exports = {
           '/epfl-news-reader/img/favicon-32.png',
           '/epfl-news-reader/img/no-image.png',
           '/epfl-news-reader/css/epfl-news-<%= pkg.version %>.min.css',
-          '/epfl-news-reader/js/epfl-news-<%= pkg.version %>.min.js',
-        ],
-      },{
+          '/epfl-news-reader/js/epfl-news-<%= pkg.version %>.min.js'
+        ]
+      }, {
         match: /<DATA_CACHE>/g,
-        replacement: 'epfl-news-data-<%= pkg.version %>',
-      },{
+        replacement: 'epfl-news-data-<%= pkg.version %>'
+      }, {
         match: /<CACHE_NAME>/g,
-        replacement: 'epfl-news-<%= pkg.version %>',
-      },],
+        replacement: 'epfl-news-<%= pkg.version %>'
+      }]
     },
     files: [{
       expand: true,
       flatten: true,
       src: ['src/service-worker.js'],
-      dest: 'build/',
-    },],
+      dest: 'build/'
+    }]
   },
   indexCssJs: {
     options: {
       patterns: [{
         match: /epfl-news.min/g,
-        replacement: 'epfl-news-<%= pkg.version %>.min',
-      },],
+        replacement: 'epfl-news-<%= pkg.version %>.min'
+      }]
     },
     files: [{
       expand: true,
       flatten: true,
       src: ['www/index.html'],
-      dest: 'www/',
-    },],
+      dest: 'www/'
+    }]
   },
   manifestStartUrl: {
     options: {
       patterns: [{
         match: /\/index.html/g,
-        replacement: '/epfl-news-reader/index.html',
-      },],
+        replacement: '/epfl-news-reader/index.html'
+      }]
     },
     files: [{
       expand: true,
       flatten: true,
       src: ['www/manifest.json'],
-      dest: 'www/',
-    },],
-  },
+      dest: 'www/'
+    }]
+  }
 };

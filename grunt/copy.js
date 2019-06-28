@@ -5,6 +5,8 @@
  * See the LICENSE file for more details.
  */
 
+'use strict';
+
 module.exports = {
   build: {
     files: [{
@@ -15,19 +17,19 @@ module.exports = {
         'img/**',
         'css/**',
         'manifest.json',
-        'service-worker.js',
+        'service-worker.js'
       ],
       dest: 'www/',
-      nonull: true,
-    },{
+      nonull: true
+    }, {
       expand: true,
       cwd: 'node_modules/handlebars/dist/',
       src: [
-        'handlebars.runtime.min.js',
+        'handlebars.runtime.min.js'
       ],
       dest: 'www/js/',
-      nonull: true,
-    },],
+      nonull: true
+    }]
   },
 
   release: {
@@ -36,10 +38,10 @@ module.exports = {
       cwd: 'src/',
       src: [
         'img/**',
-        'manifest.json',
+        'manifest.json'
       ],
       dest: 'www/',
-      nonull: true,
-    },],
-  },
+      nonull: true
+    }]
+  }
 };
