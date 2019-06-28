@@ -5,16 +5,16 @@
  * See the LICENSE file for more details.
  */
 
-(function() {
-  'use strict';
+'use strict';
 
+(function () {
   /**
    * Model for localStorage wrapper
    *
    * @class StorageModel
    * @constructor
    */
-  EPFLNews.StorageModel = function(key) {
+  EPFLNews.StorageModel = function (key) {
     this.key = key;
     this.enabled = this.isLocalStorageSupported();
   };
@@ -25,7 +25,7 @@
    * @method set
    * @param {String} value
    */
-  EPFLNews.StorageModel.prototype.set = function(value) {
+  EPFLNews.StorageModel.prototype.set = function (value) {
     if (this.enabled) {
       localStorage.setItem(this.key, value);
     }
@@ -37,7 +37,7 @@
    * @method get
    * @return {String} returns the string value
    */
-  EPFLNews.StorageModel.prototype.get = function() {
+  EPFLNews.StorageModel.prototype.get = function () {
     if (this.enabled) {
       return localStorage.getItem(this.key);
     }
@@ -48,7 +48,7 @@
    *
    * @method remove
    */
-  EPFLNews.StorageModel.prototype.remove = function() {
+  EPFLNews.StorageModel.prototype.remove = function () {
     if (this.enabled) {
       localStorage.removeItem(this.key);
     }
@@ -59,7 +59,7 @@
    *
    * @return {Boolean} returns true if localStorage is supported
    */
-  EPFLNews.StorageModel.prototype.isLocalStorageSupported = function() {
+  EPFLNews.StorageModel.prototype.isLocalStorageSupported = function () {
     try {
       localStorage.setItem('foobar', 'foobar');
       localStorage.removeItem('foobar');
@@ -68,5 +68,4 @@
       return false;
     }
   };
-
 })();

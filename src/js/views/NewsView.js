@@ -5,13 +5,11 @@
  * See the LICENSE file for more details.
  */
 
-(function($$) {
-  'use strict';
+'use strict';
 
-  EPFLNews.NewsView = function(id) {
-    this.html = EPFLNews.Templates[
-      EPFLNews.Constants.HANDLEBARS.NEWS
-    ]({
+(function ($$) {
+  EPFLNews.NewsView = function (id) {
+    this.html = EPFLNews.Templates[EPFLNews.Constants.HANDLEBARS.NEWS]({
       NEWS_IMAGE: EPFLNews.Utils.doublePictureSize(
         EPFLNews.data[id].news_visual_absolute_url
       ),
@@ -22,11 +20,11 @@
       NEWS_VIDEO: EPFLNews.data[id].video,
       NEWS_URL: EPFLNews.data[id].absolute_slug,
       back: true,
-      NAVBAR_TITLE: EPFLNews.data[id].title,
+      NAVBAR_TITLE: EPFLNews.data[id].title
     });
   };
 
-  EPFLNews.NewsView.prototype.addExternalLinkClass = function() {
+  EPFLNews.NewsView.prototype.addExternalLinkClass = function () {
     var $$links = $$('.news-text').find('a');
     for (var i = 0; i < $$links.length; i++) {
       var $$l = $$($$links[i]);
@@ -35,7 +33,7 @@
     }
   };
 
-  EPFLNews.NewsView.prototype.wrapIframe = function() {
+  EPFLNews.NewsView.prototype.wrapIframe = function () {
     var $$frames = $$('iframe');
     for (var i = 0; i < $$frames.length; i++) {
       var wrapper = document.createElement('div');
@@ -45,34 +43,30 @@
     }
   };
 
-
-  EPFLNews.NewsView.prototype.cleanText = function(text) {
+  EPFLNews.NewsView.prototype.cleanText = function (text) {
     // Clean style
-    text = text.replace(/style="[a-zA-Z0-9:;\.\s\(\)\-\,]*"/gi);
+    text = text.replace(/style="[a-zA-Z0-9:;.\s()-,]*"/gi);
     // HTTP to HTTPS
     text = text.replace(/http:\/\//g, 'https://');
 
     return text;
   };
 
-  EPFLNews.NewsView.prototype.buildNews = function() {
+  EPFLNews.NewsView.prototype.buildNews = function () {
     for (var i = 0; i < 1; i++) {
       var news = '';
-      news += EPFLNews.Templates[
-        EPFLNews.Constants.HANDLEBARS.NEWS
-      ]();
+      news += EPFLNews.Templates[EPFLNews.Constants.HANDLEBARS.NEWS]();
       EPFLNews.Views.viewMain.router.load({
         content: news,
-        animatePages: false,
+        animatePages: false
       });
     }
   };
 
-  EPFLNews.NewsView.prototype.render = function() {
+  EPFLNews.NewsView.prototype.render = function () {
     EPFLNews.Views.viewMain.router.load({
       content: this.html,
-      animatePages: false,
+      animatePages: false
     });
   };
-
 })(Dom7);

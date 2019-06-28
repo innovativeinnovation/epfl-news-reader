@@ -5,20 +5,22 @@
  * See the LICENSE file for more details.
  */
 
+'use strict';
+
 module.exports = {
   options: {
-    namespace: 'EPFLNews.Templates',
+    namespace: 'EPFLNews.Templates'
   },
 
   build: {
     files: {
-      'www/js/templates/all.js': ['src/templates/**/*.hbs'],
-    },
+      'www/js/templates/all.js': ['src/templates/**/*.hbs']
+    }
   },
 
   release: {
     files: {
-      'build/js/templates/all.js': ['src/templates/**/*.hbs'],
-    },
-  },
+      'build/js/templates/all.js': ['src/templates/**/*.hbs']
+    }
+  }
 };

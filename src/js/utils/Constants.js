@@ -5,15 +5,15 @@
  * See the LICENSE file for more details.
  */
 
-(function() {
-  'use strict';
+'use strict';
 
+(function () {
   EPFLNews.Constants = {
 
     DEFAULT_LANGUAGE: 'en',
     SUPPORTED_LANGUAGE: {
       en: 'English',
-      fr: 'Français',
+      fr: 'Français'
     },
 
     DEFAULT_CHANNEL: 'mediacom',
@@ -25,7 +25,7 @@
       'mediacom',
       'sb',
       'sti',
-      'sv',
+      'sv'
     ],
 
     SUBTITLE_SIZE: 150,
@@ -36,9 +36,8 @@
       NEWS_BLOCK: 'src/templates/full/news-block.hbs',
       ABOUT: 'src/templates/full/about.hbs',
       SETTING: 'src/templates/full/setting.hbs',
-      PANEL: 'src/templates/full/panel.hbs',
-    },
+      PANEL: 'src/templates/full/panel.hbs'
+    }
 
   };
-
 })();

@@ -5,13 +5,11 @@
  * See the LICENSE file for more details.
  */
 
-(function($$) {
-  'use strict';
+'use strict';
 
-  EPFLNews.SettingView = function() {
-    this.html = EPFLNews.Templates[
-      EPFLNews.Constants.HANDLEBARS.SETTING
-    ]({
+(function ($$) {
+  EPFLNews.SettingView = function () {
+    this.html = EPFLNews.Templates[EPFLNews.Constants.HANDLEBARS.SETTING]({
       back: true,
       NAVBAR_TITLE: EPFLNews.i18n[EPFLNews.language].MENU_SETTING,
       LANGUAGE_OPTIONS: this.buildLanguageOptions(),
@@ -21,18 +19,18 @@
       SETTING_CHANNEL: EPFLNews.i18n[EPFLNews.language].SETTING_CHANNEL,
       SETTING_CHANNEL_TITLE:
         EPFLNews.i18n[EPFLNews.language].SETTING_CHANNEL_TITLE,
-      CHANNEL_OPTIONS: this.buildChannelOptions(),
+      CHANNEL_OPTIONS: this.buildChannelOptions()
     });
   };
 
-  EPFLNews.SettingView.prototype.render = function() {
+  EPFLNews.SettingView.prototype.render = function () {
     EPFLNews.Views.viewMain.router.load({
       content: this.html,
-      animatePages: false,
+      animatePages: false
     });
   };
 
-  EPFLNews.SettingView.prototype.buildLanguageOptions = function() {
+  EPFLNews.SettingView.prototype.buildLanguageOptions = function () {
     var optionHtml = '';
     for (var key in EPFLNews.Constants.SUPPORTED_LANGUAGE) {
       if (EPFLNews.Constants.SUPPORTED_LANGUAGE.hasOwnProperty(key)) {
@@ -48,8 +46,9 @@
     return optionHtml;
   };
 
-  EPFLNews.SettingView.prototype.buildChannelOptions = function() {
+  EPFLNews.SettingView.prototype.buildChannelOptions = function () {
     var optionHtml = '';
+    var lg = EPFLNews.language;
     for (var i = 0; i < EPFLNews.Constants.SUPPORTED_CHANNEL.length; i++) {
       optionHtml += '<option value="' +
         EPFLNews.Constants.SUPPORTED_CHANNEL[i] + '" ';
@@ -57,11 +56,9 @@
         optionHtml += 'selected';
       }
       optionHtml += '>';
-      optionHtml += EPFLNews.i18n[EPFLNews.language]
-        [EPFLNews.Constants.SUPPORTED_CHANNEL[i]];
+      optionHtml += EPFLNews.i18n[lg][EPFLNews.Constants.SUPPORTED_CHANNEL[i]];
       optionHtml += '</option>';
     }
     return optionHtml;
   };
-
 })(Dom7);

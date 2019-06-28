@@ -5,13 +5,13 @@
  * See the LICENSE file for more details.
  */
 
-(function($$) {
-  'use strict';
+'use strict';
 
+(function ($$) {
   EPFLNews.Events = {
 
-    onClickNews: function() {
-      $$(document).on('click', '.newsLink', function() {
+    onClickNews: function () {
+      $$(document).on('click', '.newsLink', function () {
         var view = new EPFLNews.NewsView($$(this).attr('news-index'));
         view.render();
         view.addExternalLinkClass();
@@ -19,32 +19,32 @@
       });
     },
 
-    onClickAbout: function() {
-      $$(document).on('click', '.aboutLink', function() {
+    onClickAbout: function () {
+      $$(document).on('click', '.aboutLink', function () {
         var view = new EPFLNews.AboutView();
         view.render();
       });
     },
 
-    onClickSetting: function() {
-      $$(document).on('click', '.settingLink', function() {
+    onClickSetting: function () {
+      $$(document).on('click', '.settingLink', function () {
         var view = new EPFLNews.SettingView();
         view.render();
       });
     },
 
-    onClickShare: function() {
-      $$(document).on('click', '.shareLink', function() {
+    onClickShare: function () {
+      $$(document).on('click', '.shareLink', function () {
         // Check if the current browser supports the Web Share API
         var link = $$(this).attr('href');
         if (navigator.share !== undefined) {
           // Share the news
           navigator.share({
             title: $$(this).attr('newsTitle'),
-            url: link,
-          }, function() {
+            url: link
+          }, function () {
             console.log('INFO: Successful share');
-          }, function(error) {
+          }, function (error) {
             console.log('ERROR: Error sharing:', error);
           });
         } else {
@@ -59,8 +59,8 @@
      * @method onChangeLanguage
      * @static
      */
-    onChangeLanguage: function() {
-      $$(document).on('change', '.select-language', function(event) {
+    onChangeLanguage: function () {
+      $$(document).on('change', '.select-language', function (event) {
         var languageController = new EPFLNews.LanguageController();
         languageController.changeLanguage(
           $$(this).find('option:checked').val()
@@ -75,16 +75,15 @@
      * @method onChangeChannel
      * @static
      */
-    onChangeChannel: function() {
-      $$(document).on('change', '.select-channel', function(event) {
+    onChangeChannel: function () {
+      $$(document).on('change', '.select-channel', function (event) {
         var channelController = new EPFLNews.ChannelController();
         channelController.changeChannel(
           $$(this).find('option:checked').val()
         );
         return false;
       });
-    },
+    }
 
   };
-
 })(Dom7);

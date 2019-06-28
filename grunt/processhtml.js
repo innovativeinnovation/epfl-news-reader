@@ -5,25 +5,27 @@
  * See the LICENSE file for more details.
  */
 
+'use strict';
+
 module.exports = {
   build: {
     options: {
       data: {
-        version: '<%= pkg.version %>',
-      },
+        version: '<%= pkg.version %>'
+      }
     },
     files: {
-      'www/index.html': ['src/index.html'],
-    },
+      'www/index.html': ['src/index.html']
+    }
   },
   release: {
     options: {
       data: {
-        version: '<%= pkg.version %>',
-      },
+        version: '<%= pkg.version %>'
+      }
     },
     files: {
-      'www/index.html': ['src/index.html'],
-    },
-  },
+      'www/index.html': ['src/index.html']
+    }
+  }
 };

@@ -1,15 +1,11 @@
 {
-  "node": true,
-  "bitwise": true,
-  "curly": true,
-  "eqeqeq": true,
-  "forin": true,
-  "noarg": true,
-  "noempty": true,
-  "nonew": true,
-  "undef": true,
-  "unused": false,
-  "strict": true,
+  "extends": "standard",
+  "parserOptions": {
+    "sourceType": "script"
+  },
+  "env": {
+    "browser": true
+  },
   "globals": {
     "caches": true,
     "document": true,
@@ -24,5 +20,10 @@
     "self": true,
     "sprintf": true,
     "window": true
+  },
+  "rules": {
+    "max-len": [2, 80],
+    "semi": [2, "always"],
+    "strict": [2, "global"]
   }
 }

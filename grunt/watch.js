@@ -5,14 +5,16 @@
  * See the LICENSE file for more details.
  */
 
+'use strict';
+
 module.exports = {
   build: {
     files: [
-      'src/**/*',
+      'src/**/*'
     ],
-    tasks: ['build'],
+    tasks: ['build']
   },
   options: {
-    livereload: true,
-  },
+    livereload: true
+  }
 };
