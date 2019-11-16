@@ -33,7 +33,9 @@
   EPFLNews.SettingView.prototype.buildLanguageOptions = function () {
     var optionHtml = '';
     for (var key in EPFLNews.Constants.SUPPORTED_LANGUAGE) {
-      if (EPFLNews.Constants.SUPPORTED_LANGUAGE.hasOwnProperty(key)) {
+      if (Object.prototype.hasOwnProperty.call(
+        EPFLNews.Constants.SUPPORTED_LANGUAGE,
+        key)) {
         optionHtml += '<option value="' + key + '" ';
         if (EPFLNews.language === key) {
           optionHtml += 'selected';
