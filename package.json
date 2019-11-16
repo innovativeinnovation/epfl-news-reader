@@ -33,7 +33,7 @@
     "grunt-contrib-watch": "^1.1.0",
     "grunt-eslint": "^22.0.0",
     "grunt-processhtml": "^0.4.2",
-    "grunt-replace": "^1.0.1",
+    "grunt-replace-regex": "^1.0.3",
     "load-grunt-config": "^3.0.1"
   },
   "dependencies": {
