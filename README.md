@@ -10,9 +10,6 @@
   <a href="https://github.com/innovativeinnovation/epfl-news-reader/actions">
     <img alt="Build Status" src="https://github.com/innovativeinnovation/epfl-news-reader/workflows/Build/badge.svg?branch=master">
   </a>
-  <a href="https://david-dm.org/innovativeinnovation/epfl-news-reader">
-    <img alt="Dependencies Status" src="https://david-dm.org/innovativeinnovation/epfl-news-reader/status.svg"/>
-  </a>
   <a href="https://raw.githubusercontent.com/innovativeinnovation/epfl-news-reader/master/LICENSE">
     <img alt="Apache License 2.0" src="https://img.shields.io/badge/license-Apache%202.0-blue.svg">
   </a>
