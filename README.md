@@ -7,8 +7,8 @@
 </p>
 
 <p align="center">
-  <a href="https://travis-ci.org/innovativeinnovation/epfl-news-reader">
-    <img alt="Build Status" src="https://travis-ci.org/innovativeinnovation/epfl-news-reader.svg?branch=master">
+  <a href="https://github.com/innovativeinnovation/epfl-news-reader/actions">
+    <img alt="Build Status" src="https://github.com/innovativeinnovation/epfl-news-reader/workflows/Build/badge.svg?branch=master">
   </a>
   <a href="https://david-dm.org/innovativeinnovation/epfl-news-reader">
     <img alt="Dependencies Status" src="https://david-dm.org/innovativeinnovation/epfl-news-reader/status.svg"/>
