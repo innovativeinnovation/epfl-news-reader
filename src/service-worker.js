@@ -26,11 +26,11 @@ self.addEventListener('activate', function (e) {
   e.waitUntil(
     caches.keys().then(function (keyList) {
       return Promise.all(
-        keyList.map(function (key) {
-          if (key !== cacheName && key !== dataCacheName) {
-            console.log('INFO: ServiceWorker removing old cache', key);
-            return caches.delete(key);
-          }
+        keyList.filter(function (key) {
+          return key !== cacheName && key !== dataCacheName;
+        }).map(function (key) {
+          console.log('INFO: ServiceWorker removing old cache', key);
+          return caches.delete(key);
         })
       );
     })
