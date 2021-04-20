@@ -1,6 +1,6 @@
 /*
  * (c) ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, VPSI, 2018.
- * Modified work (c) William Belle, 2018-2020.
+ * Modified work (c) William Belle, 2018-2021.
  * See the LICENSE file for more details.
  */
 
