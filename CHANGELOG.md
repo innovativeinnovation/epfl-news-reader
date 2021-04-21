@@ -1,6 +1,14 @@
 Changelog
 =========
 
+### v1.2.0 / 2021-04-21
+
+  - Update and clean dependencies
+  - Migrate from Travis CI to GitHub Actions
+  - Test against Node.js 14
+  - Move to eslint
+  - Remove badge dependencies
+
 ### v1.1.1 / 2019-06-07
 
   - Add small space before end of news
