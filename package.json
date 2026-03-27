@@ -36,6 +36,6 @@
     "load-grunt-config": "^3.0.1"
   },
   "dependencies": {
-    "handlebars": "4.7.7"
+    "handlebars": "4.7.9"
   }
 }
